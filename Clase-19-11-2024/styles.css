@@ -1,0 +1,86 @@
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif; 
+    /* Tipografía */
+    line-height: 1,5;
+    /* Controla la altura de casa línea de texto para mejorar la legibilidad */
+}
+
+header {
+    background-color: indianred;
+    /* Color de fondo */
+    color: #FFF;
+    /* Color de texto */
+    text-align: center;
+    /* Alineación de texto. Esta SOLO SIRVE PARA BLOQUES, no funciona en líneas */
+}
+
+footer {
+    background-image: linear-gradient(aqua,lightblue);
+    /* Color de fondo con degradado, importante que no haya espacio entre instrucción y () */
+    text-align: center;
+}
+
+.menu {
+/* "." es para hacer referencia a la clase, la cual delimitamos en HTML */
+    list-style: none;
+    /* Quitamos viñetas */
+}
+
+.enlace {
+    text-decoration: none;
+    /* no hay decoración de texto, en este caso quitamos subrayado de enlaces */
+    color: #FFF;
+    font-weight:bold;
+    /* Fuente negritas */
+}
+
+.enlace:hover {
+/* hover: cuando se pone el mouse encima */
+    color: burlywood;
+    text-decoration: underline;
+}
+
+.enlace:active {
+/* active: cuando se hace click */
+    color:chocolate;
+    text-decoration: underline;
+}
+
+.subtitulo {
+    font-size: larger;
+    /* Cambiamos el tamaño de fuente a todos los subtñitulos */
+    color:cadetblue;
+}
+
+.boton {
+    background-color: brown;
+    color: beige;
+    width: 100px;
+    height: 50px;
+    /* tamaño del botón */
+    border: none;
+    /* quitamos borde del botón */
+}
+
+.boton:hover {
+    background-color: cornflowerblue;
+}
+
+.boton:active {
+    background-color: black;
+    color: green;
+}
+
+.boton-send {
+/* creamos otra clase dentro de un div que cobntiene al botón apra poder moverlo */
+    text-align: center;
+    /* alineamos botón al centro */
+}
+
+#titulo-principal {
+/* aquí hacemos referencia al ID. Es importante que sólo se utilice uno por archivo, es único */
+    text-decoration: underline;
+    color: purple;
+}
