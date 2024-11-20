@@ -1,29 +1,29 @@
-
-
 body {
-    font-family: Arial, Helvetica, sans-serif; 
+    font-family: Arial, Helvetica, sans-serif;
     /* Tipografía */
-    line-height: 1,5;
-    /* Controla la altura de casa línea de texto para mejorar la legibilidad */
+    line-height: 1.5;
+    /* Controla la altura de casa línea de texto para mejorar la legibilidad/interlineado */
 }
 
 header {
     background-color: indianred;
     /* Color de fondo */
-    color: #FFF;
+    color: #fff;
     /* Color de texto */
     text-align: center;
     /* Alineación de texto. Esta SOLO SIRVE PARA BLOQUES, no funciona en líneas */
+    /* Text-align sólo funciona en elemento en bloque porque afecta al contenido dentro del bloque.
+    No funciona en elementos en línea porque estos ocupan solo el espacio necesario para su contenido. */
 }
 
 footer {
-    background-image: linear-gradient(aqua,lightblue);
+    background-image: linear-gradient(aqua, lightblue);
     /* Color de fondo con degradado, importante que no haya espacio entre instrucción y () */
     text-align: center;
 }
 
 .menu {
-/* "." es para hacer referencia a la clase, la cual delimitamos en HTML */
+    /* "." es para hacer referencia a la clase, la cual delimitamos en HTML */
     list-style: none;
     /* Quitamos viñetas */
 }
@@ -31,27 +31,32 @@ footer {
 .enlace {
     text-decoration: none;
     /* no hay decoración de texto, en este caso quitamos subrayado de enlaces */
-    color: #FFF;
-    font-weight:bold;
+    color: #fff;
+    font-weight: bold;
     /* Fuente negritas */
 }
 
 .enlace:hover {
-/* hover: cuando se pone el mouse encima */
+    /* hover: cuando se pone el mouse encima */
     color: burlywood;
     text-decoration: underline;
 }
 
 .enlace:active {
-/* active: cuando se hace click */
-    color:chocolate;
+    /* active: cuando se hace click */
+    color: chocolate;
     text-decoration: underline;
 }
 
 .subtitulo {
     font-size: larger;
     /* Cambiamos el tamaño de fuente a todos los subtñitulos */
-    color:cadetblue;
+    color: cadetblue;
+}
+
+.resaltar {
+    font-weight: bold;
+    /* ponemos en negritas los span con esta clase */
 }
 
 .boton {
@@ -66,6 +71,8 @@ footer {
 
 .boton:hover {
     background-color: cornflowerblue;
+    cursor: pointer;
+    /* Cambia el cursor a puntero al ponerse sobre el botón */
 }
 
 .boton:active {
@@ -74,13 +81,15 @@ footer {
 }
 
 .boton-send {
-/* creamos otra clase dentro de un div que cobntiene al botón apra poder moverlo */
+    /* creamos otra clase dentro de un div que cobntiene al botón apra poder moverlo */
     text-align: center;
     /* alineamos botón al centro */
 }
 
 #titulo-principal {
-/* aquí hacemos referencia al ID. Es importante que sólo se utilice uno por archivo, es único */
+    /* aquí hacemos referencia al ID. Es importante que sólo se utilice uno por archivo, es único */
     text-decoration: underline;
     color: purple;
+    /* Utilizar los selectores de id con mucho cuidado.
+    Los id tienen una mayor especificidad en css, lo que puede causar problemas. */
 }
