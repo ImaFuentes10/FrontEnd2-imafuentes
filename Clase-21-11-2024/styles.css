@@ -1,36 +1,62 @@
+/* Variables de css */
+/* 
+-Son variables reutilizables definidas mediante la sintaxis "--nombre-variable"
+-Permiten centralizar la gestión de estilos, facilita mantenimiento y cambios globales
+-Se pueden usar en cualquier parte del CSS mediante la función var(--nombre-variable) 
+*/
+
+/* Selector :root */
+
+/* 
+- :root es una pseudo-clase que selecciona el elemento raíz del docuemnto (html)
+-Es útil para declarar variables globales que afectan todo el doumento
+-Tambiñen puedes declarar variables en otros selectores como clases, ID o elementos 
+específicos para limitar su alcance
+*/
+
+:root {
+    --color-primario: cadetblue;
+    --color-background: beige;
+    --color-secciones: lightgray;
+    --color-bordes: rgb(24, 91, 95);
+    --color-texto: #333;
+    --color-texto-secundario: aliceblue;
+    --color-elementos: lightblue;
+}
+
 /* Reset básico */
 
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0%;
     padding: 0%;
-    background-color: beige;
+    background-color: var(--color-background);
     color: #333;
 }
 
 header {
     text-align: center;
-    background-color: cadetblue;
-    color:aliceblue;
+    background-color: var(--color-primario);
+    color:var(--color-texto-secundario);
     padding: 20px;
 }
 
 section {
-    border: 2px solid burlywood;
+    border: 2px solid var(--color-bordes);
     /* valores para la propiedad border en orden: grosor, estilo, color */
-    background-color:lightgray;
+    background-color:var(--color-secciones);
     padding: 15px;
     margin: 20px;
     border-radius: 15px;
 }
 
 h2 {
-    color:firebrick;
+    color:var(--color-primario);
 }
 
 .box {
-    background-color:lightblue;
-    border: 1px solid darkblue;
+    background-color:var(--color-elementos);
+    border: 1px solid var(--color-bordes);
     padding: 10px;
     margin: 10px auto;
     /* valor auto en la propiedad margin hace que el navegador calcule el espacio 
@@ -63,15 +89,16 @@ h2 {
 .model {
     margin: 20px;
     padding: 20px;
-    border: 10px solid darkblue;
+    border: 10px solid var(--color-bordes);
 }
 
 .content-box {
     box-sizing: content-box;
     margin: 10px;
     padding: 20px;
-    border: 10px solid darkblue;
-    background-color: lightblue;
+    border: 10px solid var(--color-bordes);
+    background-color: var(--color-elementos);
+    text-align: center;
     width: 200px;
 }
 /* Vemnos que aunque tengan el mismo width, cuando se despliega los elemntos tienen
@@ -81,7 +108,8 @@ el contenido del elemento, mientras que border-box lo toma para todo el elemento
     box-sizing: border-box;
     margin: 10px;
     padding: 20px;
-    border: 10px solid darkblue;
-    background-color: lightblue;
+    border: 10px solid var(--color-bordes);
+    background-color: var(--color-elementos);
+    text-align: center;
     width: 200px;
 }
