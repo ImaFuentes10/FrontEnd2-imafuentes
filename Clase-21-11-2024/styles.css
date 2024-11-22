@@ -42,6 +42,20 @@ h2 {
 .block {
     display: block;
     width: 150px;
-    height: 30px;
+    height: 50px;
     border-radius: 5px;
+}
+
+.inline {
+    display: inline;
+    width: 150px;
+    height: 30px;
+    /* width y height se ignoran porque los elementos inline los ignoran */
+}
+
+.inline-block {
+    display: inline-block;
+    width: 150px;
+    height: 30px;
+    /* width y height se ignoran porque los elementos inline los ignoran */
 }

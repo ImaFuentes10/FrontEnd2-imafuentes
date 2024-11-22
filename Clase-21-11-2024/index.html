@@ -23,13 +23,33 @@
     <main>
         <section>
             <h2>Display: Block</h2>
-            <p>Los elementos con display: black ocupan el ancho complemento disponible y empiezan en un nueva línea.</p>
+            <p>Los elementos con display: block ocupan el ancho complemento disponible y empiezan en un nueva línea.</p>
             <div class="box">
                 Soy un elemento block
             </div>
             <div class="box block">
-                Soy otro elemento block
+                Soy otro elemento block pero con una clase más
             </div>
+        </section>
+
+        <section>
+            <h2>Display: Inline</h2>
+            <p>
+                Los elementos con display: inline solo ocupan el ancho necesario y no aceptan
+                propiedades de width y height.
+            </p>
+            <span class="box inline">Soy un elemento inline</span>
+            <span class="box inline">Yo también soy inline</span>
+        </section>
+
+        <section>
+            <h2>Display: Inline-Block</h2>
+            <p>
+                Los elementos con display: inline-block combinan las características de inline
+                (no cortan línea) con block (aceptan width y height).
+            </p>
+            <span class="box inline-block">Soy un elemento inline-block</span>
+            <span class="box inline-block">Yo también soy inline-block</span>
         </section>
     </main>
 
