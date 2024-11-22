@@ -1,25 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Box Model y Display</title>
 
     <link rel="stylesheet" href="styles.css" />
-  </head>
 
-  <body>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+</head>
+
+<body>
     <header>
-      <h1>Box Model y Display</h1>
-      <p>
-        Esta página muestra como reacciona el modelo con diferentes valores de
-        display y box-sizing.
-      </p>
+        <h1>Box Model & Display</h1>
+        <p>
+            Esta página muestra como reacciona el modelo con diferentes valores de display y box-sizing.
+        </p>
     </header>
 
     <main>
         <section>
             <h2>Display: Block</h2>
+            <p>Los elementos con display: black ocupan el ancho complemento disponible y empiezan en un nueva línea.</p>
+            <div class="box">
+                Soy un elemento block
+            </div>
+            <div class="box block">
+                Soy otro elemento block
+            </div>
         </section>
     </main>
 
@@ -36,5 +46,6 @@
                 <i class="fa-solid fa-envelope"></i></a>
         </p>
     </footer>
-  </body>
+</body>
+
 </html>

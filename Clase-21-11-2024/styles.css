@@ -1,0 +1,25 @@
+/* Reset básico */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0%;
+    padding: 0%;
+    background-color: beige;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    background-color: cadetblue;
+    color:aliceblue;
+    padding: 20px;
+}
+
+section {
+    border: 2px solid burlywood;
+    /* valores para la propiedad border en orden: grosor, estilo, color */
+    background-color:lightgray;
+    padding: 15px;
+    margin: 20px;
+    border-radius: 15px;
+}
