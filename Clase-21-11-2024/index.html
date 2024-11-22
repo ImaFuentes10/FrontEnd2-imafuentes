@@ -28,7 +28,7 @@
                 Soy un elemento block
             </div>
             <div class="box block">
-                Soy otro elemento block pero con una clase más
+                Elemento block y una clase más
             </div>
         </section>
 
@@ -50,6 +50,55 @@
             </p>
             <span class="box inline-block">Soy un elemento inline-block</span>
             <span class="box inline-block">Yo también soy inline-block</span>
+        </section>
+
+        <section>
+            <h2>El box model en acción</h2>
+            <p>El box model afecta el espacio y diseño de cada elemento según su display</p>
+            <div>
+                <h3>Display: Block</h3>
+                <p>
+                    Cada elemento de tipo block ocupa el ancho completo y se apilan uno
+                    debajo del otro.
+                </p>
+                <p>El padding, border y margin funcionan como se espera.</p>
+                <div class="box block model">
+                    Bloque 1
+                </div>
+                <div class="box block model">
+                    Bloque 2
+                </div>
+            </div>
+
+            <div>
+                <h3>Display: Block</h3>
+                <p>Los elementos inline se alinean horizontalmente como texto</p>
+                <p>
+                    El margen horizontal funciona, pero el vertical no afecta el flujo
+                    del documento. Por esto, se ignoran estas propiedades.
+                </p>
+                <div class="box inline model">
+                    Inline 1
+                </div>
+                <div class="box inline model">
+                    Inline 2
+                </div>
+            </div>
+
+            <div>
+                <h3>Display: Inline-Block</h3>
+                <p>
+                    Los elementos inline-block se alinean horizontalmente como inline
+                    pero permiten usar width, height, padding, border y margin como un
+                    display block.
+                </p>
+                <div class="box inline-block model">
+                    Inline-Block 1
+                </div>
+                <div class="box inline-block model">
+                    Inline-Block 2
+                </div>
+            </div>
         </section>
     </main>
 

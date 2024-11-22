@@ -42,7 +42,7 @@ h2 {
 .block {
     display: block;
     width: 150px;
-    height: 50px;
+    height: 30px;
     border-radius: 5px;
 }
 
@@ -58,4 +58,10 @@ h2 {
     width: 150px;
     height: 30px;
     /* width y height se ignoran porque los elementos inline los ignoran */
+}
+
+.model {
+    margin: 20px;
+    padding: 20px;
+    border: 10px solid darkblue;
 }
