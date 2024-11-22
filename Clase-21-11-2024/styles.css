@@ -23,3 +23,25 @@ section {
     margin: 20px;
     border-radius: 15px;
 }
+
+h2 {
+    color:firebrick;
+}
+
+.box {
+    background-color:lightblue;
+    border: 1px solid darkblue;
+    padding: 10px;
+    margin: 10px auto;
+    /* valor auto en la propiedad margin hace que el navegador calcule el espacio 
+    necesario para centrar un elemento en su contenedor padre. El elemento debe 
+    tener ancho definido. Esta manera de centrar los elementos SÒLO APLICA HORIZONTAL */
+    text-align: center;
+}
+
+.block {
+    display: block;
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+}
