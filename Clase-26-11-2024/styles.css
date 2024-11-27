@@ -1,0 +1,25 @@
+/* Reset básico */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    /* Etilos generales aplicados en body que se heredan a los hijos */
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Según la propiedad de especificidad, es de mayor prioridad el que 
+tenga más información del elemento. 
+En este caso header=1pt y h1=1pt, aasí que será azul el texto*/
+header h1 {
+    color:blue;
+}
+
+h1 {
+    color: cadetblue;
+}
