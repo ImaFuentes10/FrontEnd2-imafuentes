@@ -88,3 +88,21 @@ h1 {
     transform: scale(1.05);
     background-color: var(--color-hover);
 }
+
+.grow {
+    /* flex-grow: 0; cuando no indicamos un valor de flex-grow, de inicio es 0 */
+    flex-grow: 2; /* Ocupa más espacio proporcionalmente */
+}
+
+.card-hover:hover {
+    transform: scale(1.1) rotate(-30deg);
+}
+
+.card:nth-child(1) {
+/* Al primer elemento con este selector se le aplicarán estos estilos */
+    align-self: flex-start;
+}
+
+.card:nth-child(3) {
+    order: 0;
+}
