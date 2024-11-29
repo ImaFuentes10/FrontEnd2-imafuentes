@@ -57,3 +57,34 @@ h1 {
     color: var(--color-hover);
 }
 
+/* CARTAS */
+
+.seccion-tarjetas {
+    text-align: center;
+    padding: 20px;
+}
+
+.contenedor-tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 600px;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.card {
+    background-color: var(--color-background-secundario);
+    color: var(--color-texto-secundario);
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    background-color: var(--color-hover);
+}
