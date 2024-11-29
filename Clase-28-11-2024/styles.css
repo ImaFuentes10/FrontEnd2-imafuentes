@@ -106,3 +106,26 @@ h1 {
 .card:nth-child(3) {
     order: 0;
 }
+
+/* FORMULARIO */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 400px;
+    margin: 0 auto;
+}
+
+button {
+    background-color: var(--color-background-secundario);
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: var(--color-hover);
+}
