@@ -1,11 +1,34 @@
 /* Variables */
 :root {
---color-primario:rgb(19, 74, 80);
---color-background: beige;
---color-texto: #333;
---color-background-secundario: rgb(163, 190, 174); 
---color-texto-secundario: rgb(49, 65, 55);
---color-hover: rgb(111, 146, 23);
+/* Tema claro */
+    --claro-color-background: beige;
+    --claro-color-texto: #333;
+    --claro-color-background-secundario: rgb(163, 190, 174); 
+    --claro-color-texto-secundario: rgb(49, 65, 55);
+    --claro-color-hover: rgb(111, 146, 23);
+
+    /* Tema oscuro */
+    --dark-color-background: #3A506B;
+    --dark-color-texto: #EAF0F1;
+    --dark-color-background-secundario: darkblue; 
+    --dark-color-texto-secundario: #96b2b7;
+    --dark-color-hover: #8AC4E3;
+}
+
+body.tema-claro {
+    --color-background:var(--claro-color-background);
+    --color-texto:var(--claro-color-texto);
+    --color-background-secundario:var(--claro-color-background-secundario);
+    --color-texto-secundario:var(--claro-color-texto-secundario);
+    --color-hover:var(--claro-color-hover);
+}
+
+body.tema-oscuro {
+    --color-background:var(--dark-color-background);
+    --color-texto:var(--dark-color-texto);
+    --color-background-secundario:var(--dark-color-background-secundario);
+    --color-texto-secundario:var(--dark-color-texto-secundario);
+    --color-hover:var(--dark-color-hover);
 }
 
 /* Reset básico */
@@ -34,7 +57,7 @@ footer {
 }
 
 h1 {
-    color: var(--color-primario);
+    color: var(--color-texto);
 }
 
 .navbar {
