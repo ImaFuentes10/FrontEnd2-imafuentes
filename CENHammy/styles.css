@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color:#333;
+}
+
+header {
+    text-align: center;
+}
+
+main {
+    text-align: center;
+}
+
+footer {
+    text-align: right;
+}
+
+h3 {
+    color: #538fbe;
+    font-weight: bold;
+}
+
+.botones-contacto {
+    color: #275d95;
+    list-style: none;
+}
+
+.botones-navegacion {
+    list-style: none;
+}
+
+.enlace {
+    text-decoration: none;
+    color: #275d95;
+    font-weight: bold;
+}
+
+.enlace:hover {
+    color: #538fbe;
+}
+
+.subtitulo {
+    color: #538fbe;
+    font-weight: bolder;
+}
+
+.mensaje-especialista {
+    list-style: none;
+}
+
+.servicios {
+    list-style: none;
+}
+
+.formulario-contacto {
+    text-align: left;
+}
+
+.titulo-formulario {
+    text-align: center;
+}
+
+.boton {
+    background-color: white;
+    color: #275d95;
+    font-weight: bold;
+}
+
+.boton:hover {
+    background-color:#275d95;
+    color: white;
+}
+
+.boton:active {
+    background-color: #538fbe;
+    color: white;
+}
+
+.enlaces-contacto {
+    text-align: center;
+}

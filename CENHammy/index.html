@@ -58,32 +58,44 @@
         </a>
 
         <nav aria-label="Enlaces de redes sociales y contacto de CENHammy">
-            <a href="https://www.facebook.com/CenHammy.Neurorehabilitacion?locale=es_ES" target="_blank">
-                <i class="fa-brands fa-facebook"></i></a>
-            <a href="https://www.instagram.com/cenhammy/" target="_blank">
-                <i class="fa-brands fa-instagram"></i></a>
-            <a href="mailto:contacto@cenhammy.com" target="_blank">
-                <i class="fa-solid fa-envelope"></i></a>
-            <a href="tel:522292373924" target="_blank">
-                <i class="fa-solid fa-phone"></i></a>
-            <a href="https://wa.me/:522292373924" target="_blank">
-                <i class="fa-brands fa-whatsapp"></i></a>
+            <ul class="botones-contacto">
+                <li>
+                    <a href="https://www.facebook.com/CenHammy.Neurorehabilitacion?locale=es_ES" target="_blank">
+                    <i class="fa-brands fa-facebook"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/cenhammy/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li>
+                    <a href="mailto:contacto@cenhammy.com" target="_blank">
+                    <i class="fa-solid fa-envelope"></i></a>
+                </li>
+                <li>
+                    <a href="tel:522292373924" target="_blank">
+                    <i class="fa-solid fa-phone"></i></a>
+                </li>
+                <li>
+                    <a href="https://wa.me/:522292373924" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i></a>
+                </li>
+            </ul>
+        </nav>
 
-            <nav aria-label="Botones de navegación del sitio">
-                <ul>
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#nosotros">Nosotros</a></li>
-                    <li><a href="#equipo">Equipo</a></li>
-
-                    <li><a href="#servicios">Servicios</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                </ul>
-            </nav>
+        <nav aria-label="Botones de navegación del sitio">
+            <ul  class="botones-navegacion">
+                <li><a class="enlace" href="#inicio">Inicio</a></li>
+                <li><a class="enlace" href="#nosotros">Nosotros</a></li>
+                <li><a class="enlace" href="#equipo">Equipo</a></li>
+                <li><a class="enlace" href="#servicios">Servicios</a></li>
+                <li><a class="enlace" href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
         <section aria-labelledby="inicio">
-            <h2 id="inicio">De donde provengo...</h2>
+            <h2 class="subtitulo" id="inicio">De donde provengo...</h2>
             <figure>
                 <img src="https://cenhammy.com/wp-content/uploads/2022/06/FOTOWEB_CEN-01.png" alt="Foto Hammy"
                     title="Hammy" width="250" loading="eager">
@@ -99,7 +111,7 @@
         </section>
 
         <section aria-labelledby="nosotros">
-            <h2 id="nosotros">Quienes somos</h2>
+            <h2 class="subtitulo" id="nosotros">Quienes somos</h2>
             <p>
                 Somos un centro de neurorehabilitación y medicina hiperbárica que nace
                 con el propósito de ayudar a la gente en el camino para llegar a una
@@ -111,14 +123,14 @@
         </section>
 
         <section aria-labelledby="equipo">
-            <h2 id="equipo">Nuestro equipo</h2>
+            <h2 class="subtitulo" id="equipo">Nuestro equipo</h2>
             <ul>
                 <figure>
                     <img src="https://cenhammy.com/wp-content/uploads/2022/06/DSC_0012-1.jpg"
                         alt="Dr. Aníbal Fuentes Manzo" title="Dr. Aníbal Fuentes Manzo" width="150" loading="lazy">
                     <figcaption>Dr. Aníbal Fuentes Manzo</figcaption>
                 </figure>
-                <li>
+                <li class="mensaje-especialista">
                     "Siento en mi corazón, que la misión que Dios me encomendó, es sanar
                     para que las personas tengan una mejor vida. Por eso estudié
                     medicina y más tarde neurocirugía y neurocirugía pediátrica"
@@ -128,7 +140,7 @@
                         alt="Psic. Karla Cynthia Morales Rivas" title="Psic. Karla Cynthia Morales Rivas" width="150" loading="lazy">
                     <figcaption>Psic. Karla Cynthia Morales Rivas</figcaption>
                 </figure>
-                <li>
+                <li class="mensaje-especialista">
                     "La psicología le dio el entendimiento a mi vida para poder apoyar a
                     los demás, pero la neuropsicología, que es realmente lo que me
                     apasiona, le dio las bases y la razón de ser en su relación cerebro
@@ -139,7 +151,7 @@
                         alt="Lic. José Aurelio Arcos Antonio" title="Lic. José Aurelio Arcos Antonio" width="150" loading="lazy">
                     <figcaption>Lic. José Aurelio Arcos Antonio</figcaption>
                 </figure>
-                <li>
+                <li class="mensaje-especialista">
                     Mi motivación para ser fisioterapeuta y neurorehabilitador,es
                     mejorar las condiciones físicas de mis pacientes, para que sus
                     actividades de la vida diaraia no representen un problema."
@@ -149,7 +161,7 @@
                         alt="Dra. Brenda de Jesús Fuentes Torres" title="Dra. Brenda de Jesús Fuentes Torres" width="150" loading="lazy">
                     <figcaption>Dra. Brenda de Jesús Fuentes Torres</figcaption>
                 </figure>
-                <li>
+                <li class="mensaje-especialista">
                     Decidí dedicarme a la medicina hiperbárica porque permite devolverle
                     la salud a aquellos pacientes que creyeron que no había más
                     alternativas y eso es lo que me hace sentir feliz como médico y
@@ -159,20 +171,20 @@
         </section>
 
         <section aria-labelledby="servicios">
-            <h2 id="servicios">Nuestros servicios</h2>
+            <h2 class="subtitulo" id="servicios">Nuestros servicios</h2>
             <ul>
-                <li>Neurocirugía y neurocirugía pediátrica</li>
-                <li>Neurología pediátrica</li>
-                <li>Neurorehabilitación y fisioterapia</li>
-                <li>Neuropsicología</li>
-                <li>Medicina hiperbárica</li>
-                <li>Oncología pediátrica</li>
-                <li>Heridas complejas y pie diabético</li>
+                <li class="servicios">Neurocirugía y neurocirugía pediátrica</li>
+                <li class="servicios">Neurología pediátrica</li>
+                <li class="servicios">Neurorehabilitación y fisioterapia</li>
+                <li class="servicios">Neuropsicología</li>
+                <li class="servicios">Medicina hiperbárica</li>
+                <li class="servicios">Oncología pediátrica</li>
+                <li class="servicios">Heridas complejas y pie diabético</li>
             </ul>
         </section>
 
         <section aria-labelledby="contacto">
-            <h2 id="contacto">Contacto</h2>
+            <h2 class="subtitulo" id="contacto">Contacto</h2>
             <fieldset>
                 <h3>Horario</h3>
                 <p>Lunes a viernes ----- 8 a 20 hrs</p>
@@ -193,16 +205,16 @@
                     </iframe>
                 </div>
                 <p>
-                    <a href="https://maps.app.goo.gl/4v2XpMp78sE8vos78" target="_blank">
+                    <a class="enlace" href="https://maps.app.goo.gl/4v2XpMp78sE8vos78" target="_blank">
                         <i class="fa-solid fa-map-location-dot"></i>
                         &nbsp;Juan Enríquez 780, entre Víctimas del 5 y 6 de julio y Flores Magón,Fracc. Zaragoza.
                         91910. Veracruz, Ver, México.</a>
                 </p>
             </article>
 
-            <form aria-labelledby="formulario-contacto">
-                <fieldset>
-                    <legend>
+            <form class="formulario-contacto" aria-labelledby="formulario-contacto">
+                <fieldset >
+                    <legend class="titulo-formulario">
                         <h3>Agenda una cita</h3>
                     </legend>
 
@@ -261,7 +273,7 @@
                     <br>
                     <br>
 
-                    <button type="submit">
+                    <button class="boton" type="submit">
                         Enviar&nbsp;
                         <span class="material-icons">send</span>
                     </button>
@@ -274,18 +286,18 @@
      de copyright y enlaces de contacto del autor. Esto funciona porque el fin es mostrar el proyecto y no es 
      para uso de la empresa. Si ya fuera para su uso, entonces probablemente debería ir todo en el footer 
      y sin enlaces de la info del autor -->
-    <aside aria-labelledby="enlaces-contacto">
+    <aside class="enlaces-contacto" aria-labelledby="enlaces-contacto">
         <h3 id="enlaces-contacto">Contáctanos</h3>
 
-        <p><a href="mailto:contacto@cenhammy.com" target="_blank"><i class="fa-solid fa-envelope"></i>
+        <p><a class="enlace" href="mailto:contacto@cenhammy.com" target="_blank"><i class="fa-solid fa-envelope"></i>
                 &nbsp;contacto@cenhammy.com</a></p>
-        <p><a href="tel:522292373924" target="_blank"><i class="fa-solid fa-phone"></i>
+        <p><a class="enlace" href="tel:522292373924" target="_blank"><i class="fa-solid fa-phone"></i>
                 &nbsp;+52 2292 37 39 24</a></p>
-        <p><a href="https://wa.me/:522292373924" target="_blank"><i class="fa-brands fa-whatsapp"></i>
+        <p><a class="enlace" href="https://wa.me/:522292373924" target="_blank"><i class="fa-brands fa-whatsapp"></i>
                 &nbsp;+52 2292 37 39 24</a></p>
-        <p><a href="https://www.facebook.com/CenHammy.Neurorehabilitacion/"><i class="fa-brands fa-facebook"></i>
+        <p><a class="enlace" href="https://www.facebook.com/CenHammy.Neurorehabilitacion/"><i class="fa-brands fa-facebook"></i>
                 &nbsp;CenHammy Centro de neurorehabilitación y medicina hiperbárica</a></p>
-        <p><a href="https://www.instagram.com/cenhammy/" target="_blank"><i class="fa-brands fa-instagram"></i>
+        <p><a class="enlace" href="https://www.instagram.com/cenhammy/" target="_blank"><i class="fa-brands fa-instagram"></i>
                 &nbsp;CENHammy</a></p>
     </aside>
 
