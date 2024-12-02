@@ -53,29 +53,31 @@
 
 <body>
     <header>
-        <a href="https://imafuentes10.github.io/Proyecto-Modulo1-FrontEndAI/" aria-label="home-link">
-            <img src="./img/FOTOWEB_CEN-02-1-e1655833400800~2.png" alt="CENHammy" title="CENHammy" width="250" loading="eager">
-        </a>
+        <div class="logo">
+            <a  href="https://imafuentes10.github.io/FrontEnd2-imafuentes/CENHammy/index.html" aria-label="home-link">
+                <img class="logo-cenhammy" src="./img/logo-CEN-blanco-01-2.png" alt="CENHammy" title="CENHammy" loading="eager">
+            </a>
+        </div>
 
         <nav aria-label="Enlaces de redes sociales y contacto de CENHammy">
-            <ul class="botones-contacto">
-                <li>
+            <ul>
+                <li class="botones-contacto">
                     <a href="https://www.facebook.com/CenHammy.Neurorehabilitacion?locale=es_ES" target="_blank">
                     <i class="fa-brands fa-facebook"></i></a>
                 </li>
-                <li>
+                <li class="botones-contacto">
                     <a href="https://www.instagram.com/cenhammy/" target="_blank">
                     <i class="fa-brands fa-instagram"></i></a>
                 </li>
-                <li>
+                <li class="botones-contacto">
                     <a href="mailto:contacto@cenhammy.com" target="_blank">
                     <i class="fa-solid fa-envelope"></i></a>
                 </li>
-                <li>
+                <li class="botones-contacto">
                     <a href="tel:522292373924" target="_blank">
                     <i class="fa-solid fa-phone"></i></a>
                 </li>
-                <li>
+                <li class="botones-contacto">
                     <a href="https://wa.me/:522292373924" target="_blank">
                     <i class="fa-brands fa-whatsapp"></i></a>
                 </li>
@@ -83,12 +85,12 @@
         </nav>
 
         <nav aria-label="Botones de navegación del sitio">
-            <ul  class="botones-navegacion">
-                <li><a class="enlace" href="#inicio">Inicio</a></li>
-                <li><a class="enlace" href="#nosotros">Nosotros</a></li>
-                <li><a class="enlace" href="#equipo">Equipo</a></li>
-                <li><a class="enlace" href="#servicios">Servicios</a></li>
-                <li><a class="enlace" href="#contacto">Contacto</a></li>
+            <ul>
+                <li class="botones-navegacion"><a class="enlace" href="#inicio">Inicio</a></li>
+                <li class="botones-navegacion"><a class="enlace" href="#nosotros">Nosotros</a></li>
+                <li class="botones-navegacion"><a class="enlace" href="#equipo">Equipo</a></li>
+                <li class="botones-navegacion"><a class="enlace" href="#servicios">Servicios</a></li>
+                <li class="botones-navegacion"><a class="enlace" href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -96,18 +98,20 @@
     <main>
         <section aria-labelledby="inicio">
             <h2 class="subtitulo" id="inicio">De donde provengo...</h2>
-            <figure>
-                <img src="https://cenhammy.com/wp-content/uploads/2022/06/FOTOWEB_CEN-01.png" alt="Foto Hammy"
-                    title="Hammy" width="250" loading="eager">
-            </figure>
-            <p>
-                Hace 36 años, un niño de apenas seis, decidió ser neurocirujano para
-                poder curar a su primo hermano que padecía parálisis cerebral, este
-                pequeño llevaba por nombre Hammad Alejandro, pero en la familia todos
-                le llamaban Hammy. Hoy, ese chico es neurocirujano y neurocirujano
-                pediatra y ha emprendido la tarea de curar a Hammy a través de todos
-                los niños y adultos que lleguen a mis puertas.
-            </p>
+            <div class="hammy">
+                <figure class="img-hammy">
+                    <img class="img-hammy" src="https://cenhammy.com/wp-content/uploads/2022/06/FOTOWEB_CEN-01.png" 
+                    alt="Foto Hammy" title="Hammy" loading="eager">
+                </figure>
+                <p class="texto-hammy">
+                    Hace 36 años, un niño de apenas seis, decidió ser neurocirujano para
+                    poder curar a su primo hermano que padecía parálisis cerebral, este
+                    pequeño llevaba por nombre Hammad Alejandro, pero en la familia todos
+                    le llamaban Hammy. Hoy, ese chico es neurocirujano y neurocirujano
+                    pediatra y ha emprendido la tarea de curar a Hammy a través de todos
+                    los niños y adultos que lleguen a mis puertas.
+                </p>
+            </div>
         </section>
 
         <section aria-labelledby="nosotros">
@@ -124,10 +128,10 @@
 
         <section aria-labelledby="equipo">
             <h2 class="subtitulo" id="equipo">Nuestro equipo</h2>
-            <ul>
-                <figure>
-                    <img src="https://cenhammy.com/wp-content/uploads/2022/06/DSC_0012-1.jpg"
-                        alt="Dr. Aníbal Fuentes Manzo" title="Dr. Aníbal Fuentes Manzo" width="150" loading="lazy">
+            <ul class="equipo">
+                <figure class="img-especialista">
+                    <img class="img-especialista" src="https://cenhammy.com/wp-content/uploads/2022/06/DSC_0012-1.jpg"
+                        alt="Dr. Aníbal Fuentes Manzo" title="Dr. Aníbal Fuentes Manzo" loading="lazy">
                     <figcaption>Dr. Aníbal Fuentes Manzo</figcaption>
                 </figure>
                 <li class="mensaje-especialista">
@@ -135,9 +139,9 @@
                     para que las personas tengan una mejor vida. Por eso estudié
                     medicina y más tarde neurocirugía y neurocirugía pediátrica"
                 </li>
-                <figure>
-                    <img src="https://cenhammy.com/wp-content/uploads/2022/06/DSC_0016-1.jpg"
-                        alt="Psic. Karla Cynthia Morales Rivas" title="Psic. Karla Cynthia Morales Rivas" width="150" loading="lazy">
+                <figure class="img-especialista">
+                    <img class="img-especialista" src="https://cenhammy.com/wp-content/uploads/2022/06/DSC_0016-1.jpg"
+                        alt="Psic. Karla Cynthia Morales Rivas" title="Psic. Karla Cynthia Morales Rivas" loading="lazy">
                     <figcaption>Psic. Karla Cynthia Morales Rivas</figcaption>
                 </figure>
                 <li class="mensaje-especialista">
@@ -146,23 +150,23 @@
                     apasiona, le dio las bases y la razón de ser en su relación cerebro
                     conducta."
                 </li>
-                <figure>
-                    <img src="https://cenhammy.com/wp-content/uploads/2022/06/DSC_0030-1.jpg"
-                        alt="Lic. José Aurelio Arcos Antonio" title="Lic. José Aurelio Arcos Antonio" width="150" loading="lazy">
+                <figure class="img-especialista">
+                    <img class="img-especialista" src="https://cenhammy.com/wp-content/uploads/2022/06/DSC_0030-1.jpg"
+                        alt="Lic. José Aurelio Arcos Antonio" title="Lic. José Aurelio Arcos Antonio" loading="lazy">
                     <figcaption>Lic. José Aurelio Arcos Antonio</figcaption>
                 </figure>
                 <li class="mensaje-especialista">
-                    Mi motivación para ser fisioterapeuta y neurorehabilitador,es
+                    "Mi motivación para ser fisioterapeuta y neurorehabilitador,es
                     mejorar las condiciones físicas de mis pacientes, para que sus
                     actividades de la vida diaraia no representen un problema."
                 </li>
-                <figure>
-                    <img src="https://cenhammy.com/wp-content/uploads/2023/06/WhatsApp-Image-2023-06-26-at-14.47.21-e1687880045220.jpeg"
-                        alt="Dra. Brenda de Jesús Fuentes Torres" title="Dra. Brenda de Jesús Fuentes Torres" width="150" loading="lazy">
+                <figure class="img-especialista">
+                    <img class="img-especialista" src="https://cenhammy.com/wp-content/uploads/2023/06/WhatsApp-Image-2023-06-26-at-14.47.21-e1687880045220.jpeg"
+                        alt="Dra. Brenda de Jesús Fuentes Torres" title="Dra. Brenda de Jesús Fuentes Torres" loading="lazy">
                     <figcaption>Dra. Brenda de Jesús Fuentes Torres</figcaption>
                 </figure>
                 <li class="mensaje-especialista">
-                    Decidí dedicarme a la medicina hiperbárica porque permite devolverle
+                    "Decidí dedicarme a la medicina hiperbárica porque permite devolverle
                     la salud a aquellos pacientes que creyeron que no había más
                     alternativas y eso es lo que me hace sentir feliz como médico y
                     persona."
@@ -172,111 +176,117 @@
 
         <section aria-labelledby="servicios">
             <h2 class="subtitulo" id="servicios">Nuestros servicios</h2>
-            <ul>
-                <li class="servicios">Neurocirugía y neurocirugía pediátrica</li>
-                <li class="servicios">Neurología pediátrica</li>
-                <li class="servicios">Neurorehabilitación y fisioterapia</li>
-                <li class="servicios">Neuropsicología</li>
-                <li class="servicios">Medicina hiperbárica</li>
-                <li class="servicios">Oncología pediátrica</li>
-                <li class="servicios">Heridas complejas y pie diabético</li>
+            <ul class="servicios">
+                <li >Neurocirugía y neurocirugía pediátrica</li>
+                <li >Neurología pediátrica</li>
+                <li >Neurorehabilitación y fisioterapia</li>
+                <li >Neuropsicología</li>
+                <li >Medicina hiperbárica</li>
+                <li >Oncología pediátrica</li>
+                <li >Heridas complejas y pie diabético</li>
             </ul>
         </section>
 
         <section aria-labelledby="contacto">
             <h2 class="subtitulo" id="contacto">Contacto</h2>
-            <fieldset>
-                <h3>Horario</h3>
-                <p>Lunes a viernes ----- 8 a 20 hrs</p>
-                <p>Sábados -------------- 8 a 14 hrs</p>
-            </fieldset>
+            <div class="horario">
+                <fieldset>
+                    <legend><h3>Horario</h3></legend>
+                    <p>Lunes a viernes ----- 8 a 20 hrs</p>
+                    <p>Sábados -------------- 8 a 14 hrs</p>
+                </fieldset>
+            </div>
 
             <!-- Decido volver 'article' a los elementos de la dirección ya que podrían ser replicados 
             independientemente en otras partes del sitio web -->
-            <article aria-label="Dirección">
-                <header>
-                    <h3>Dirección</h3>
-                </header>
-                <div class="google-map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.2485441158724!2d-96.1290777!3d19.184343700000003!
+            <div class="ubicacion" aria-label="Ubicación">
+                <fieldset>
+                    <legend>
+                        <h3>Dirección</h3>
+                    </legend>
+                    <div class="google-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.2485441158724!2d-96.1290777!3d19.184343700000003!
                             2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c346c5f7c2e7c3%3A0xe2424e287f551b1b!2sCenhammy!5e0!3m2!
                             1ses!2smx!4v1731794195482!5m2!1ses!2smx" width="400" height="300" style="border:0;"
-                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-                </div>
-                <p>
-                    <a class="enlace" href="https://maps.app.goo.gl/4v2XpMp78sE8vos78" target="_blank">
-                        <i class="fa-solid fa-map-location-dot"></i>
-                        &nbsp;Juan Enríquez 780, entre Víctimas del 5 y 6 de julio y Flores Magón,Fracc. Zaragoza.
-                        91910. Veracruz, Ver, México.</a>
-                </p>
-            </article>
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                    <p>
+                        <a class="enlace" href="https://maps.app.goo.gl/4v2XpMp78sE8vos78" target="_blank">
+                            <i class="fa-solid fa-map-location-dot"></i>
+                            &nbsp;Juan Enríquez 780, entre Víctimas del 5 y 6 de julio y Flores Magón,Fracc. Zaragoza.
+                            91910. Veracruz, Ver, México.</a>
+                    </p>
+                </fieldset>
+            </div>
 
-            <form class="formulario-contacto" aria-labelledby="formulario-contacto">
-                <fieldset >
-                    <legend class="titulo-formulario">
+            <form aria-labelledby="formulario-contacto">
+                <fieldset>
+                    <legend>
                         <h3>Agenda una cita</h3>
                     </legend>
 
-                    <label for="nombre">Nombre(s):</label>
-                    <input type="text" id="nombre" placeholder="Escribe tu(s) nombre(s)" required>
-                    &nbsp;&nbsp;&nbsp;
-                    <label for="apellido">Apellidos(s):</label>
-                    <input type="text" id="apellido" placeholder="Escribe tu(s) apellido(s)" required>
+                    <div class="formulario-contacto">
+                        <label for="nombre">Nombre(s):</label>
+                        <input type="text" id="nombre" placeholder="Escribe tu(s) nombre(s)" required>
+                        &nbsp;&nbsp;&nbsp;
+                        <label for="apellido">Apellidos(s):</label>
+                        <input type="text" id="apellido" placeholder="Escribe tu(s) apellido(s)" required>
 
-                    <br>
-                    <br>
+                        <br>
+                        <br>
 
-                    <label for="usuario">Soy</label>
-                    <select id="usuario" required>
-                        <option>------ Selecciona ------</option>
-                        <option>Paciente</option>
-                        <option>Familiar</option>
-                        <option>Profesional de la salud</option>
-                        <option>Empresa/Proveedor</option>
-                        <option>Otro</option>
-                    </select>
+                        <label for="usuario">Soy</label>
+                        <select id="usuario" required>
+                            <option>------ Selecciona ------</option>
+                            <option>Paciente</option>
+                            <option>Familiar</option>
+                            <option>Profesional de la salud</option>
+                            <option>Empresa/Proveedor</option>
+                            <option>Otro</option>
+                        </select>
 
-                    <br>
-                    <br>
+                        <br>
+                        <br>
 
-                    <label for="teléfono">Teléfono:</label>
-                    <input type="text" id="teléfono" placeholder="(555) 555 55 55" required>
-                    &nbsp;&nbsp;&nbsp;
-                    <label for="email">Correo electrónico:</label>
-                    <input type="text" id="email" placeholder="ejemplo@correo.com" required>
+                        <label for="teléfono">Teléfono:</label>
+                        <input type="text" id="teléfono" placeholder="(555) 555 55 55" required>
+                        &nbsp;&nbsp;&nbsp;
+                        <label for="email">Correo electrónico:</label>
+                        <input type="text" id="email" placeholder="ejemplo@correo.com" required>
 
-                    <br>
-                    <br>
-                    <fieldset>
-                        <legend>Deseo que me contacten inicialmente por:</legend>
+                        <br>
+                        <br>
+                        <fieldset>
+                            <legend>Deseo que me contacten inicialmente por:</legend>
+
+                            <br>
+
+                            <label for="llamada">Llamada</label>
+                            <input type="radio" name="opcion-contacto" id="llamada">
+
+                            <label for="cualquiera">WhatsApp</label>
+                            <input type="radio" name="opcion-contacto" id="WhatsApp">
+
+                            <label for="email">Correo electrónico</label>
+                            <input type="radio" name="opcion-contacto" id="email">
+                        </fieldset>
 
                         <br>
 
-                        <label for="llamada">Llamada</label>
-                        <input type="radio" name="opcion-contacto" id="llamada">
+                        <label for="comentarios">Comentarios:</label>
+                        <textarea id="comentarios" rows="5" placeholder="Escribe aquí tus comentarios..." required>
+                        </textarea>
 
-                        <label for="cualquiera">WhatsApp</label>
-                        <input type="radio" name="opcion-contacto" id="WhatsApp">
+                        <br>
+                        <br>
+                        <br>
 
-                        <label for="email">Correo electrónico</label>
-                        <input type="radio" name="opcion-contacto" id="email">
-                    </fieldset>
-
-                    <br>
-
-                    <label for="comentarios">Comentarios:</label>
-                    <textarea id="comentarios" rows="5" placeholder="Escribe aquí tus comentarios..." required>
-                    </textarea>
-
-                    <br>
-                    <br>
-                    <br>
-
-                    <button class="boton" type="submit">
-                        Enviar&nbsp;
-                        <span class="material-icons">send</span>
-                    </button>
+                        <button class="boton" type="submit">
+                            Enviar&nbsp;
+                            <span class="material-icons">send</span>
+                        </button>
+                    </div>
                 </fieldset>
             </form>
         </section>
