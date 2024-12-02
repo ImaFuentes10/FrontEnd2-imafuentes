@@ -67,6 +67,7 @@ h3 {
 
 .enlace:hover {
     color: var(--color-primario);
+    cursor: pointer;
 }
 
 .subtitulo {
@@ -140,6 +141,7 @@ h3 {
 .boton:hover {
     background-color:var(--color-primario);
     color: var(--color-background);
+    cursor: pointer;
 }
 
 .boton:active {
