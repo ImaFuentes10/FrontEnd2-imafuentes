@@ -83,6 +83,51 @@ header {
     border-radius: 50%;
 }
 
+.productos {
+    padding: 20px;
+    margin: 10px;
+}
+
+.lista-carrusel {
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    overflow-x: auto;  /* El contenedor permite un desplazamiento horizontal */
+    scroll-snap-type: x mandatory; 
+    /* Defino como se comportanlos puntos de desplazamiento de mi contenedor 
+    x: indica que el desplazamiento es en el eje x
+    mandatory: el scroll se ajustará al siguiente punto de ajuste definido */
+    text-align: center;
+    color: #333;
+    text-decoration: none;
+}
+
+.producto-item {
+    text-align: center;
+    color: #333;
+    text-decoration: none;
+    scroll-snap-align: center;
+    /* Definir como los elementos individuales dentro de un contenedor scroll
+    se alinean cuando se ajustan */
+}
+
+.producto-item img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.producto-titulo {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.producto-precio {
+    font-size: 14px;
+    color: darkcyan;
+    font-weight: bold;
+}
+
 footer {
     text-align: center;
     padding: 10px;
