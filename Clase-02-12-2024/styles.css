@@ -59,6 +59,30 @@ header {
     border-radius: 5px;
 }
 
+.categorias {
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+}
+
+.lista-categorias {
+    display: flex;
+    justify-content:space-around;
+    gap: 20px;
+}
+
+.categoria-item {
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+}
+
+.categoria-item img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
 footer {
     text-align: center;
     padding: 10px;
