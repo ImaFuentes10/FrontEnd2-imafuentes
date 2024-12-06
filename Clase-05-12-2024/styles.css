@@ -1,8 +1,10 @@
 :root{
-    --color-background: #f4f4f4;
+    --color-background: rgb(212, 209, 209);
     --color-texto: #333;
     --color-principal: #a6b59a;
     --color-secundario: #004713;
+    --color-blanco: #f4f4f4;
+    --color-sombra: rgba(0,0,0,0.5)
 }
 
 /* Estilos generales */
@@ -56,4 +58,64 @@ header{
 
 .nav-menu li a:hover{
     color: var(--color-secundario);
+}
+
+/* MAIN */
+
+/* CARTAS */
+.contenedor-cartas{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.carta{
+    background-color: var(--color-blanco);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.contenedor-imagen{
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+
+.sombra{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--color-sombra);
+    width: 100%;
+    height: 400px;
+    font-size: 25px;
+    color: var(--color-blanco);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    border-radius: 10px;
+    transition: opacity 0.3s;
+}
+
+.contenedor-imagen:hover .sombra{
+    opacity:1;
+    cursor: pointer;
+}
+
+.contenedor-imagen img{
+    border-radius: 10px;
+}
+
+/* FOOTER */
+footer{
+    padding: 20px 0;
+    text-align: center;
+    background-color: var(--color-principal);
+    position: relative;
+    width: 100%;
+    bottom: 0;
 }
