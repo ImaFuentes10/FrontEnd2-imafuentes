@@ -15,8 +15,8 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     color:var(--color-texto);
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
     background-color: var(--color-background);
 }
 
@@ -101,12 +101,14 @@ body {
     color: var(--color-background);
 }
 
+/* MAIN */
+
 .subtitulo {
     color:var(--color-primario);
     font-weight: bolder;
     text-align: center;
-    padding: 0;
-    margin: 10px 0;
+    padding: 50px 0 15px 0;
+    margin: 0;
 }
 
 .img-hammy {
@@ -154,6 +156,12 @@ body {
     width: 400px;
 }
 
+h3 {
+    color: var(--color-primario);
+    font-weight: bold;
+    text-align: center;
+}
+
 .ubicacion {
     display: inline-block;
     width: 800px;
@@ -179,16 +187,63 @@ body {
     background-color: var(--color-secundario);
 }
 
+/* FOOTER */
+
+.seccion-enlaces-contacto {
+    padding: 20px;
+}
+
 .enlaces-contacto {
-    text-align: center;
+    list-style: none;
+    padding: 0;
 }
 
-footer {
+.enlaces-contacto li {
+    padding: 10px 0;
+    display: block;
+}
+
+.enlaces-contacto li a {
+    text-decoration: none;
+    color: var(--color-texto);
+}
+
+.enlaces-contacto li a:hover{
+    cursor: pointer;
+    color: var(--color-transition1);
+}
+
+.enlaces-contacto li a i{
+    font-size: 20px;
+}
+
+.autor {
     text-align: right;
+    margin: 0;
+    padding: 20px;
 }
 
-h3 {
-    color: var(--color-primario);
-    font-weight: bold;
-    text-align: center;
+.autor p {
+    display: inline-block;
+    margin: 0;
+}
+
+.enlaces-autor {
+    list-style: none; 
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.enlaces-autor li{
+    display: inline;
+}
+
+.enlaces-autor li a{
+    color: var(--color-texto);
+}
+
+.enlaces-autor a:hover {
+    cursor: pointer;
+    color: var(--color-texto-tenue);
 }
