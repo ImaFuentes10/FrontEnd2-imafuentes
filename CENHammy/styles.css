@@ -3,6 +3,7 @@
     --color-secundario: #538fbe;
     --color-texto: #333;
     --color-background: white;
+    --color-texto-tenue: #817f80;
 }
 
 * {
@@ -46,11 +47,25 @@ h3 {
     text-align: center;
 }
 
+.nav-botones-contacto{
+    padding: 0;
+    margin: 10px;
+}
+
 .botones-contacto {
     color: var(--color-secundario);
     list-style: none;
+    margin: 5px;
+    padding: 5px;
+}
+
+.botones-contacto li {
     display: inline;
-    margin: 0px 15px;
+    padding: 0 10px;
+}
+
+.botones-contacto li a {
+    color: var(--color-texto-tenue);
 }
 
 .botones-navegacion {
