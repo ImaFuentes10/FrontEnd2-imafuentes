@@ -2,8 +2,10 @@
     --color-primario: #275d95;
     --color-secundario: #538fbe;
     --color-texto: #333;
-    --color-background: white;
+    --color-background: #f4f4f4;
     --color-texto-tenue: #817f80;
+    --color-transition1: #53a7be;
+    --color-transition2: #174188;
 }
 
 * {
@@ -15,22 +17,10 @@ body {
     color:var(--color-texto);
     margin: 0%;
     padding: 0%;
-    background-color: white;
+    background-color: var(--color-background);
 }
 
-header {
-    text-align: center;
-}
-
-footer {
-    text-align: right;
-}
-
-h3 {
-    color: var(--color-primario);
-    font-weight: bold;
-    text-align: center;
-}
+/* HEADER */
 
 .logo {
     background-color: var(--color-primario);
@@ -49,14 +39,14 @@ h3 {
 
 .nav-botones-contacto{
     padding: 0;
-    margin: 10px;
+    margin: 0;
+    text-align: right;
 }
 
 .botones-contacto {
-    color: var(--color-secundario);
     list-style: none;
-    margin: 5px;
-    padding: 5px;
+    margin: 0;
+    padding: 10px;
 }
 
 .botones-contacto li {
@@ -66,23 +56,49 @@ h3 {
 
 .botones-contacto li a {
     color: var(--color-texto-tenue);
+    font-size: 20px;
+}
+
+.botones-contacto li a:hover {
+    cursor: pointer;
+    color: var(--color-texto);
+}
+
+.nav-botones-navegacion {
+    display: inline-block;
+    margin-left: 620px;
+    border: solid var(--color-texto-tenue);
+    width: 700px;
+    border-radius: 20px;
+    text-align: center;
 }
 
 .botones-navegacion {
     list-style: none;
-    display: inline-block;
-    margin: 0px 50px;
+    margin: 0px;
+    padding: 0px;
 }
 
-.enlace {
-    text-decoration: none;
+.botones-navegacion li {
+    display: inline-block;
+    padding: 10px 35px;
+    border-radius: 15px;
+}
+
+.botones-navegacion li:hover {
+    background-image: linear-gradient(to right,var(--color-transition2),var(--color-transition1));
+    color: var(--color-background);
+    cursor: pointer;
+}
+
+.botones-navegacion li a {
     color: var(--color-secundario);
+    text-decoration: none;
     font-weight: bold;
 }
 
-.enlace:hover {
-    color: var(--color-primario);
-    cursor: pointer;
+.botones-navegacion li a:hover {
+    color: var(--color-background);
 }
 
 .subtitulo {
@@ -164,5 +180,15 @@ h3 {
 }
 
 .enlaces-contacto {
+    text-align: center;
+}
+
+footer {
+    text-align: right;
+}
+
+h3 {
+    color: var(--color-primario);
+    font-weight: bold;
     text-align: center;
 }
