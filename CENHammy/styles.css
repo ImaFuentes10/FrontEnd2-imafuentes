@@ -38,17 +38,21 @@ body {
 }
 
 .nav-botones-contacto{
-    text-align: right;
+    display: flex;
+    justify-content: right;
 }
 
 .botones-contacto {
     list-style: none;
     padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 20px;
 }
 
 .botones-contacto li {
-    display: inline;
-    padding: 0 10px;
+    display: flex;
 }
 
 .botones-contacto li a {
