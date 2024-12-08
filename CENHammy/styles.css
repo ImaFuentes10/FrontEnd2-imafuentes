@@ -10,14 +10,15 @@
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
     color:var(--color-texto);
-    margin: 0;
-    padding: 0;
     background-color: var(--color-background);
+    line-height: 1.5;
 }
 
 /* HEADER */
@@ -25,7 +26,6 @@ body {
 .logo {
     background-color: var(--color-primario);
     text-align: left;
-    margin: 0px;
     padding: 10px;
     margin-left: 30px;
     width: 275px;
@@ -38,14 +38,11 @@ body {
 }
 
 .nav-botones-contacto{
-    padding: 0;
-    margin: 0;
     text-align: right;
 }
 
 .botones-contacto {
     list-style: none;
-    margin: 0;
     padding: 10px;
 }
 
@@ -75,8 +72,6 @@ body {
 
 .botones-navegacion {
     list-style: none;
-    margin: 0px;
-    padding: 0px;
 }
 
 .botones-navegacion li {
@@ -108,13 +103,10 @@ body {
     font-weight: bolder;
     text-align: center;
     padding: 50px 0 15px 0;
-    margin: 0;
 }
 
 .img-hammy {
     display: inline-block;
-    margin: 0px;
-    padding: 0px;
     text-align: left;
     width: 500px;
 }
@@ -127,8 +119,7 @@ body {
 }
 
 .equipo {
-    margin: 0;
-    padding: 0;
+   /* falta */
 }
 
 .img-especialista {
@@ -147,8 +138,6 @@ body {
     list-style: none;
     text-align: center;
     text-decoration:none;
-    margin: 0;
-    padding: 0;
 }
 
 .horario {
@@ -195,7 +184,6 @@ h3 {
 
 .enlaces-contacto {
     list-style: none;
-    padding: 0;
 }
 
 .enlaces-contacto li {
@@ -219,20 +207,16 @@ h3 {
 
 .autor {
     text-align: right;
-    margin: 0;
     padding: 20px;
 }
 
 .autor p {
     display: inline-block;
-    margin: 0;
 }
 
 .enlaces-autor {
     list-style: none; 
     display: inline-block;
-    margin: 0;
-    padding: 0;
 }
 
 .enlaces-autor li{
