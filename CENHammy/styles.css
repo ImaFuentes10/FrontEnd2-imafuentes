@@ -207,11 +207,16 @@ h3 {
 
 .direccion a:hover {
     cursor: pointer;
-    color: var(--color-transition2);
+    color: var(--color-transition1);
 }
 
+/* Formulario */
+
 .formulario-contacto {
-    text-align: left;
+    display: flex;
+    width: 1000px;
+    justify-content: center;
+    margin: 0 20px;
 }
 
 .boton {
@@ -237,17 +242,27 @@ h3 {
 }
 
 .enlaces-contacto {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     list-style: none;
+    width: 550px;
+    align-items: center;
+    justify-content: left;
 }
 
 .enlaces-contacto li {
     padding: 10px 0;
-    display: block;
 }
 
 .enlaces-contacto li a {
     text-decoration: none;
     color: var(--color-texto);
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 300px;
+    font-weight: bold;
 }
 
 .enlaces-contacto li a:hover{
@@ -256,28 +271,30 @@ h3 {
 }
 
 .enlaces-contacto li a i{
+    padding-right: 10px;
     font-size: 20px;
 }
 
-.autor {
-    text-align: right;
-    padding: 20px;
+#fb {
+    width: 550px;
 }
 
-.autor p {
-    display: inline-block;
+/* Autor */
+
+.autor {
+    display: flex;
+    justify-content: right;
+    padding: 20px;
 }
 
 .enlaces-autor {
     list-style: none; 
-    display: inline-block;
+    display: flex;
+    width: 60px;
+    justify-content: space-around;
 }
 
-.enlaces-autor li{
-    display: inline;
-}
-
-.enlaces-autor li a{
+.enlaces-autor a{
     color: var(--color-texto);
 }
 
