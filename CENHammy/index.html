@@ -190,36 +190,34 @@
 
         <section aria-labelledby="contacto">
             <h2 class="subtitulo" id="contacto">Contacto</h2>
-            <div class="horario">
-                <fieldset>
+            <div class="ubi-horario">
+           
+                <fieldset class="horario">
                     <legend><h3>Horario</h3></legend>
-                    <p>Lunes a viernes ----- 8 a 20 hrs</p>
-                    <p>Sábados -------------- 8 a 14 hrs</p>
+                    <ul>
+                    <li>Lunes a viernes ----- 8 a 20 hrs</li>
+                    <li>Sábados -------------- 8 a 14 hrs</li>
+                </ul>
                 </fieldset>
-            </div>
-
-            <!-- Decido volver 'article' a los elementos de la dirección ya que podrían ser replicados 
-            independientemente en otras partes del sitio web -->
-            <div class="ubicacion" aria-label="Ubicación">
-                <fieldset>
+            
+                <fieldset class="direccion" aria-label="Dirección">
                     <legend>
                         <h3>Dirección</h3>
                     </legend>
-                    <div class="google-map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.2485441158724!2d-96.1290777!3d19.184343700000003!
+                    
+                    <iframe  class="google-map" 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.2485441158724!2d-96.1290777!3d19.184343700000003!
                             2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c346c5f7c2e7c3%3A0xe2424e287f551b1b!2sCenhammy!5e0!3m2!
                             1ses!2smx!4v1731794195482!5m2!1ses!2smx" width="400" height="300" style="border:0;"
                             allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
-                    </div>
-                    <p>
-                        <a class="enlace" href="https://maps.app.goo.gl/4v2XpMp78sE8vos78" target="_blank">
+                    </iframe>
+                    
+                    <a href="https://maps.app.goo.gl/4v2XpMp78sE8vos78" target="_blank">
                             <i class="fa-solid fa-map-location-dot"></i>
                             &nbsp;Juan Enríquez 780, entre Víctimas del 5 y 6 de julio y Flores Magón,Fracc. Zaragoza.
                             91910. Veracruz, Ver, México.</a>
-                    </p>
                 </fieldset>
-            </div>
+        </div>
 
             <form aria-labelledby="formulario-contacto">
                 <fieldset>

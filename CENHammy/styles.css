@@ -108,6 +108,7 @@ body {
 
 .hammy {
     display: flex;
+    margin: 0 20px;
 }
 
 .img-hammy {
@@ -147,20 +148,66 @@ body {
     text-decoration:none;
 }
 
-.horario {
-    display: inline-block;
-    width: 400px;
-}
-
 h3 {
     color: var(--color-primario);
     font-weight: bold;
     text-align: center;
 }
 
-.ubicacion {
-    display: inline-block;
-    width: 800px;
+.ubi-horario {
+    display: flex;
+    margin: 0 20px;
+    justify-content: space-evenly;
+    height: 500px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-bottom: 40px;
+}
+
+.horario {
+    display: flex;
+    width: 350px;
+    align-items:center;
+    justify-content: center;
+    border: solid;
+    border-color: var(--color-transition1);
+    border-radius: 10px;
+}
+
+.horario ul {
+    list-style: none;
+    line-height: 5;
+    font-weight: bold;
+}
+
+.direccion {
+    display: flex;
+    width: 350px;
+    justify-content: center;
+    align-items:center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border: solid;
+    border-color: var(--color-transition1);
+    border-radius: 10px;
+}
+
+.direccion iframe {
+    display: flex;
+    width: 300px;
+}
+
+.direccion a {
+    display: block;
+    width: 300px;
+    text-decoration: none;
+    color: var(--color-texto);
+    font-weight: bold;
+}
+
+.direccion a:hover {
+    cursor: pointer;
+    color: var(--color-transition2);
 }
 
 .formulario-contacto {
