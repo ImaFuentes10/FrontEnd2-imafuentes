@@ -30,11 +30,12 @@ body {
     margin-left: 30px;
     width: 275px;
     border-radius: 0px 0px 25px 25px;
+    display: flex;
+    justify-content: space-around;
 }
 
-.logo-cenhammy {
+.logo a img {
     width: 250px;
-    text-align: center;
 }
 
 .nav-botones-contacto{
@@ -43,16 +44,11 @@ body {
 }
 
 .botones-contacto {
+    display: flex;
     list-style: none;
     padding: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    gap: 20px;
-}
-
-.botones-contacto li {
-    display: flex;
+    width: 250px;
+    justify-content: space-around;
 }
 
 .botones-contacto li a {
@@ -66,28 +62,29 @@ body {
 }
 
 .nav-botones-navegacion {
-    display: inline-block;
-    margin-left: 620px;
-    border: solid var(--color-texto-tenue);
-    width: 700px;
-    border-radius: 20px;
-    text-align: center;
+    display: flex;
+    justify-content: right;
 }
+
 
 .botones-navegacion {
     list-style: none;
+    display: flex;
+    width: 690px;
+    border: solid var(--color-texto-tenue);
+    border-radius: 25px;
+    justify-content: space-around;
 }
 
 .botones-navegacion li {
-    display: inline-block;
-    padding: 10px 35px;
-    border-radius: 15px;
+    padding: 10px 38px;
 }
 
 .botones-navegacion li:hover {
     background-image: linear-gradient(to right,var(--color-transition2),var(--color-transition1));
     color: var(--color-background);
     cursor: pointer;
+    border-radius: 25px;
 }
 
 .botones-navegacion li a {
