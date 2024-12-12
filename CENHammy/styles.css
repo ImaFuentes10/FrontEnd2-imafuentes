@@ -106,17 +106,23 @@ body {
     padding: 50px 0 15px 0;
 }
 
+.hammy {
+    display: flex;
+}
+
 .img-hammy {
-    display: inline-block;
-    text-align: left;
+    display: flex;
+    justify-content: left;
     width: 500px;
+    border-radius: 50px;
 }
 
 .texto-hammy {
-    display: inline-block;
-    width: 500px;
+    display: flex;
     margin: 0px 100px;
-    text-align: center;
+    height: 434px;
+    align-items: center;
+    justify-content: center;
 }
 
 .equipo {
