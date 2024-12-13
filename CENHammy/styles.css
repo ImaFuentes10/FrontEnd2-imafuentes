@@ -128,19 +128,36 @@ body {
 }
 
 .equipo {
-   /* falta */
+    display: flex;
+    gap: 20px;
+    padding: 10px 20px;
+    text-align: center;
+    color: var(--color-texto);
+    overflow-x: auto; 
+    scroll-snap-type: x mandatory; 
+}
+
+.especialista{
+    text-decoration: none;
+    text-align: center;
+    color: var(--color-texto);
+    scroll-snap-align: center;
 }
 
 .img-especialista {
-    display: inline-block;
-    width: 200px;
+    width: 300px;
+    border-radius: 20px;
+}
+
+.titulo-especialista{
+    font-size: 18px;
 }
 
 .mensaje-especialista {
-    display: inline-block;
-    list-style: none;
-    text-align: center;
+    font-size: 16px;
+    font-style: italic;
     width: 300px;
+    padding: 0 5px;
 }
 
 .servicios {
