@@ -6,6 +6,7 @@
     --color-texto-tenue: #817f80;
     --color-transition1: #53a7be;
     --color-transition2: #174188;
+    --color-background-secundario: #e2dfdf;
 }
 
 * {
@@ -154,7 +155,7 @@ h3 {
     text-align: center;
 }
 
-.ubi-horario {
+.tarjetas {
     display: flex;
     margin: 0 20px;
     justify-content: space-evenly;
@@ -166,7 +167,7 @@ h3 {
 
 .horario {
     display: flex;
-    width: 350px;
+    width: 400px;
     align-items:center;
     justify-content: center;
     border: solid;
@@ -182,11 +183,10 @@ h3 {
 
 .direccion {
     display: flex;
-    width: 350px;
+    width: 400px;
     justify-content: center;
     align-items:center;
     flex-wrap: wrap;
-    flex-direction: row;
     border: solid;
     border-color: var(--color-transition1);
     border-radius: 10px;
@@ -194,12 +194,13 @@ h3 {
 
 .direccion iframe {
     display: flex;
-    width: 300px;
+    width: 350px;
+    height: 350px;
 }
 
 .direccion a {
     display: block;
-    width: 300px;
+    width: 350px;
     text-decoration: none;
     color: var(--color-texto);
     font-weight: bold;
@@ -214,20 +215,57 @@ h3 {
 
 .formulario-contacto {
     display: flex;
-    width: 1000px;
+    width:400px;
+    height: 500px;
     justify-content: center;
     margin: 0 20px;
+    border: solid;
+    border-color: var(--color-transition1);
+    border-radius: 10px;
+}
+
+.form-contenido{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.form-elemento{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.form-contenido fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    border: solid var(--color-secundario);
+    width: 380px;
+}
+
+.opcion-contacto {
+    padding: 10px 0;
 }
 
 .boton {
-    background-color: var(--color-background);
+    background-color: var(--color-background-secundario);
     color: var(--color-primario);
     font-weight: bold;
+    border-radius: 5px;
+    width: 80px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .boton:hover {
     background-color:var(--color-primario);
-    color: var(--color-background);
+    color: var(--color-background-secundario);
     cursor: pointer;
 }
 
