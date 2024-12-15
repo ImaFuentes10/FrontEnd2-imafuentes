@@ -100,32 +100,95 @@ body {
 
 /* MAIN */
 
+.inicio{
+    display: flex;
+    justify-content: center;
+    padding: 50px 0 15px 0;
+    flex-wrap: wrap;
+}
+
 .subtitulo {
     color:var(--color-primario);
     font-weight: bolder;
     text-align: center;
-    padding: 50px 0 15px 0;
+    padding: 30px 0 15px 0;
+    width: 100%;
 }
 
 .hammy {
     display: flex;
     margin: 0 20px;
+    border-radius: 51px;
+    background-image: radial-gradient(at 0%, #1b65a0 65%, var(--color-transition1));
+    width: 1100px;
+    height: 434px;
+    justify-content: center;
 }
 
 .img-hammy {
     display: flex;
-    justify-content: left;
-    width: 500px;
-    border-radius: 50px;
+    height: 434px;
+    width: 40%;
+    border-radius: 50px 217px 217px 50px;
+    background-color: #817f80;
+    position: relative;
+    right: 55px;
 }
 
 .texto-hammy {
     display: flex;
-    margin: 0px 100px;
+    padding: 0 5% 0 5%;
     height: 434px;
+    width: 50%;
     align-items: center;
     justify-content: center;
+    color: var(--color-background-secundario);
+    font-weight: bold;
+    font-style: italic;
 }
+
+.cenhammy {
+    display: flex;
+    margin: 20px 20px;
+    border-radius: 51px;
+    background-image: radial-gradient(at 0% 0%, #1b65a0 10%, var(--color-transition1) 90%);
+    width: 1100px;
+    height: 200px;
+    justify-content: center;
+}
+
+.cenhammy-texto {
+    display: flex;
+    padding: 0 5% 0 5%;
+    height: 200px;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-background-secundario);
+    font-weight: bold;
+    font-style: italic;
+}
+
+.logo-color {
+    display: flex;
+    margin: 0px 20px;
+    border-radius: 51px;
+    background-image: radial-gradient(at 50% 100%, white 60%, var(--color-transition1));
+    width: 1100px;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-cenhammy {
+    display: flex;
+    height: 200px;
+    width: 40%;
+    border-radius: 50px;
+    position: relative;
+    top: 10px;
+}
+
 
 .equipo {
     display: flex;
@@ -207,6 +270,7 @@ h3 {
     border: solid;
     border-color: var(--color-transition1);
     border-radius: 10px;
+    
 }
 
 .direccion iframe {
