@@ -24,15 +24,22 @@ body {
 
 /* HEADER */
 
+header{
+    margin-bottom: 40px;
+}
+
 .logo {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 25px;
     background-color: var(--color-primario);
-    text-align: left;
     padding: 10px;
-    margin-left: 30px;
     width: 275px;
     border-radius: 0px 0px 25px 25px;
-    display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    z-index: 1100;
 }
 
 .logo a img {
@@ -41,7 +48,9 @@ body {
 
 .nav-botones-contacto{
     display: flex;
-    justify-content: right;
+    position: absolute;
+    top: 15px;
+    right: 0;
 }
 
 .botones-contacto {
@@ -62,11 +71,25 @@ body {
     color: var(--color-texto);
 }
 
-.nav-botones-navegacion {
+.contenedor-botones-navegacion{ /*Puesto antes de header para que funciones sticky*/
     display: flex;
-    justify-content: right;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: var(--color-background);
+    margin-top: 60px;
 }
 
+.nav-botones-navegacion {
+    display: flex;
+    position: absolute;
+    padding: 10px 10px;
+    top: 0;
+    right: 0;
+    background-color: var(--color-background);
+    width: 100%;
+    justify-content: right;
+}
 
 .botones-navegacion {
     list-style: none;
