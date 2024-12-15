@@ -107,14 +107,6 @@ body {
     flex-wrap: wrap;
 }
 
-.subtitulo {
-    color:var(--color-primario);
-    font-weight: bolder;
-    text-align: center;
-    padding: 30px 0 15px 0;
-    width: 100%;
-}
-
 .hammy {
     display: flex;
     margin: 0 20px;
@@ -133,6 +125,12 @@ body {
     background-color: #817f80;
     position: relative;
     right: 55px;
+    overflow: hidden;
+}
+
+.img-hammy img{
+    height: 100%;
+    width: 100%;
 }
 
 .texto-hammy {
@@ -164,6 +162,7 @@ body {
     width: 80%;
     align-items: center;
     justify-content: center;
+    text-align: center;
     color: var(--color-background-secundario);
     font-weight: bold;
     font-style: italic;
@@ -189,22 +188,49 @@ body {
     top: 10px;
 }
 
+.subtitulo {
+    color:var(--color-primario);
+    font-weight: bolder;
+    text-align: center;
+    padding: 30px 0 15px 0;
+    width: 100%;
+    font-size: 32px;
+}
 
-.equipo {
+.equipo{
+    display: flex;
+    margin: 0 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.equipo-tarjetas {
     display: flex;
     gap: 20px;
-    padding: 10px 20px;
-    text-align: center;
-    color: var(--color-texto);
+    padding: 10px 0;
     overflow-x: auto; 
     scroll-snap-type: x mandatory; 
 }
 
+.contenedor-especialista {
+    display: flex;
+    z-index: -1000;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
 .especialista{
     text-decoration: none;
-    text-align: center;
     color: var(--color-texto);
     scroll-snap-align: center;
+}
+
+.fig-especialista{
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
 }
 
 .img-especialista {
@@ -213,14 +239,38 @@ body {
 }
 
 .titulo-especialista{
-    font-size: 18px;
+    font-size: 16px;
+    color: var(--color-secundario);
+    padding: 10px 0 0 0;
 }
 
 .mensaje-especialista {
-    font-size: 16px;
+    font-size: 18px;
     font-style: italic;
+    font-weight: bold;
     width: 300px;
+    height: 100%;
     padding: 0 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 300px;
+    height: 100%;
+    font-size: 16px;
+    color: var(--color-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    border-radius: 20px;
+    transition: opacity 0.3s;
+}
+
+.contenedor-especialista:hover .mensaje-especialista{
+    opacity:1;
+    cursor: pointer;
 }
 
 .servicios {
