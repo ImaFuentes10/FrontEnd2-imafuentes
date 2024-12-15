@@ -306,58 +306,93 @@ h3 {
     color: var(--color-primario);
     font-weight: bold;
     text-align: center;
+    font-size: 24px;
 }
 
 .tarjetas {
     display: flex;
-    margin: 0 20px;
+    margin: 0 20px 20px 20px;
     justify-content: space-evenly;
-    height: 500px;
-    flex-wrap: wrap;
-    flex-direction: row;
-    margin-bottom: 40px;
+    height: 450px;
 }
 
 .horario {
     display: flex;
+    flex-wrap: wrap;
     width: 400px;
-    align-items:center;
-    justify-content: center;
-    border: solid;
-    border-color: var(--color-transition1);
+    height: 450px;
     border-radius: 10px;
+    background-image: radial-gradient(at 0% 0%, var(--color-transition2), var(--color-transition1));
 }
 
-.horario ul {
+.horario h3{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 10%;
+    top: 8px;
+    left: 0px;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-background-secundario);
+}
+
+.horas-atencion {
+    display: flex;
+    width: 100%;
+    height: 70%;
     list-style: none;
-    line-height: 5;
     font-weight: bold;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+    color: var(--color-background-secundario);
+}
+
+.horas-atencion p  {
+    width: 100%;
+    text-align: center;
 }
 
 .direccion {
     display: flex;
     width: 400px;
+    height: 450px;
     justify-content: center;
     align-items:center;
     flex-wrap: wrap;
     border: solid;
-    border-color: var(--color-transition1);
-    border-radius: 10px;
-    
+    border: var(--color-transition1) 4px solid;
+    border-radius: 10px; 
+}
+
+.direccion h3 {
+    display: flex;
+    position: relative;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 45px;
 }
 
 .direccion iframe {
     display: flex;
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
 }
 
 .direccion a {
-    display: block;
-    width: 350px;
+    display: flex;
+    position: relative;
+    bottom: 8px;
+    padding-top: 15px;
+    width: 90%;
     text-decoration: none;
     color: var(--color-texto);
     font-weight: bold;
+    justify-content: center;
+    text-align: center;
 }
 
 .direccion a:hover {
@@ -368,14 +403,30 @@ h3 {
 /* Formulario */
 
 .formulario-contacto {
-    display: flex;
     width:400px;
-    height: 500px;
+    height: 450px;
+}
+
+.formulario-contenedor {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    margin: 0 20px;
-    border: solid;
-    border-color: var(--color-transition1);
+    width: 100%;
+    height: 100%;
     border-radius: 10px;
+    border-style: none;
+    background-image: radial-gradient(at 100% 0%, var(--color-transition2), var(--color-transition1));
+}
+
+.formulario-contacto h3 {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 10%;
+    top: 5px;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-background-secundario);
 }
 
 .form-contenido{
@@ -384,6 +435,9 @@ h3 {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    height: 90%;
+    color: var(--color-background-secundario);
+    font-weight: bold;
 }
 
 .form-elemento{
@@ -392,17 +446,39 @@ h3 {
     align-items: center;
 }
 
+.form-elemento input {
+    display: flex;
+    position: relative;
+    background-color: var(--color-background-secundario);
+    border-style: none;
+    border-radius: 5px;
+    color: var(--color-texto);
+}
+
 .form-contenido fieldset {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    border: solid var(--color-secundario);
-    width: 380px;
+    border: solid var(--color-background-secundario);
+    width: 390px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.form-contenido fieldset legend {
+    margin-left: 24px;
 }
 
 .opcion-contacto {
-    padding: 10px 0;
+    display: flex;
+    gap: 8px;
+    padding-bottom: 5px;
+}
+
+#comentarios{
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border-style: none;
 }
 
 .boton {
@@ -415,6 +491,8 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    position: relative;
+    bottom: 5px;
 }
 
 .boton:hover {
