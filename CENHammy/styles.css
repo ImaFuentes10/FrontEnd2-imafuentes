@@ -2,11 +2,11 @@
     --color-primario: #275d95;
     --color-secundario: #538fbe;
     --color-texto: #333;
-    --color-background: #f4f4f4;
+    --color-background: #e2dfdf;
     --color-texto-tenue: #817f80;
     --color-transition1: #53a7be;
     --color-transition2: #174188;
-    --color-background-secundario: #e2dfdf;
+    --color-background-secundario: #f4f4f4;
 }
 
 * {
@@ -166,6 +166,7 @@ header{
     color: var(--color-background-secundario);
     font-weight: bold;
     font-style: italic;
+    font-size: 1.1rem;
 }
 
 .cenhammy {
@@ -189,6 +190,7 @@ header{
     color: var(--color-background-secundario);
     font-weight: bold;
     font-style: italic;
+    font-size: 1.1rem;
 }
 
 .logo-color {
@@ -240,7 +242,8 @@ header{
     z-index: -1000;
     flex-wrap: wrap;
     justify-content: center;
-    
+    margin-left: 5px;
+    transition: transform 0.3s;
 }
 
 .especialista{
@@ -254,6 +257,8 @@ header{
     height: 300px;
     overflow: hidden;
     position: relative;
+    border-radius: 20px;
+    box-shadow: 2px 4px 6px 4px rgba(0, 0, 0, 0.2);
 }
 
 .img-especialista {
@@ -281,7 +286,7 @@ header{
     width: 300px;
     height: 100%;
     font-size: 16px;
-    color: var(--color-background);
+    color: var(--color-background-secundario);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -293,20 +298,116 @@ header{
 
 .contenedor-especialista:hover .mensaje-especialista{
     opacity:1;
-    cursor: pointer;
+    cursor: pointer
+}
+
+.contenedor-especialista:hover{
+    transform: scale(1.05);
 }
 
 .servicios {
     list-style: none;
     text-align: center;
     text-decoration:none;
+    padding: 0 20px;
 }
+
+.contenedor-trajetas-servicios{
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(32, 1fr);
+    column-gap: 1rem;
+    row-gap: 4rem;
+    align-items: center;
+    justify-items: center;
+}
+
+.servicio{
+    width: 15rem;
+    height: 15rem;
+    border-radius: 0.5rem;
+    transition: background 0.3s;
+    background-color: var(--color-background-secundario);
+    animation: aparecer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-primario);
+    font-weight: bold;
+    box-shadow: 2px 4px 6px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.borde-servicios{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 95%;
+    height: 95%;
+    border: solid var(--color-transition1);
+    background-color: var(--color-background-secundario);
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    border-width: 0.15rem;
+    font-size: 1.2rem;
+}
+
+.borde-servicios p{
+    margin: 0 5px 15px 5px;
+}
+
+.borde-servicios span{
+    font-size: 2.5rem;
+}
+
+.borde-servicios i{
+    font-size: 2rem;
+}
+
+.servicio:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.neurocirugia {
+    grid-column: 2 / 7;
+}
+
+.neurologia {
+    grid-column: 10 / 15;
+}
+
+.neurorehab {
+    grid-column: 18 / 23;
+}
+
+.neuropsic {
+    grid-column: 26 / 31;
+}
+
+.hiperbarica {
+    grid-column: 6 / 11;
+    grid-row: 2;
+}
+
+.oncopeda {
+    grid-column: 14 / 19;
+    grid-row: 2;
+}
+
+.heridas {
+    grid-column: 22 / 27;
+    grid-row: 2;
+}
+
 
 h3 {
     color: var(--color-primario);
     font-weight: bold;
     text-align: center;
     font-size: 24px;
+    width: 100%;
 }
 
 .tarjetas {
@@ -334,7 +435,7 @@ h3 {
     left: 0px;
     justify-content: center;
     align-items: center;
-    color: var(--color-background-secundario);
+    color: var(--color-background);
 }
 
 .horas-atencion {
@@ -346,7 +447,7 @@ h3 {
     flex-direction: column;
     justify-content: space-around;
     position: relative;
-    color: var(--color-background-secundario);
+    color: var(--color-background);
 }
 
 .horas-atencion p  {
@@ -364,6 +465,7 @@ h3 {
     border: solid;
     border: var(--color-transition1) 4px solid;
     border-radius: 10px; 
+    background-color: var(--color-background-secundario);
 }
 
 .direccion h3 {
@@ -483,7 +585,7 @@ h3 {
 
 .boton {
     background-color: var(--color-background-secundario);
-    color: var(--color-primario);
+    color: var(--color-secundario);
     font-weight: bold;
     border-radius: 5px;
     width: 80px;
@@ -493,22 +595,27 @@ h3 {
     justify-content: space-around;
     position: relative;
     bottom: 5px;
+    transition: transform 0.3s;
 }
 
 .boton:hover {
-    background-color:var(--color-primario);
+    background-color:var(--color-secundario);
     color: var(--color-background-secundario);
     cursor: pointer;
+    transform: scale(1.05);
 }
 
 .boton:active {
-    background-color: var(--color-secundario);
+    background-color: var(--color-transition1);
 }
 
 /* FOOTER */
 
 .seccion-enlaces-contacto {
+    display: flex;
+    flex-wrap: wrap;
     padding: 20px;
+    justify-content: center;
 }
 
 .enlaces-contacto {
@@ -516,26 +623,28 @@ h3 {
     flex-wrap: wrap;
     flex-direction: row;
     list-style: none;
-    width: 550px;
+    width: 100%;
     align-items: center;
-    justify-content: left;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 .enlaces-contacto li {
     padding: 10px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .enlaces-contacto li a {
     text-decoration: none;
     color: var(--color-texto);
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    width: 300px;
+    text-align: center;
     font-weight: bold;
 }
 
-.enlaces-contacto li a:hover{
+.enlaces-contacto span a:hover{
     cursor: pointer;
     color: var(--color-transition1);
 }
@@ -543,10 +652,6 @@ h3 {
 .enlaces-contacto li a i{
     padding-right: 10px;
     font-size: 20px;
-}
-
-#fb {
-    width: 550px;
 }
 
 /* Autor */

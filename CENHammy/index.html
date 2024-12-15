@@ -46,6 +46,7 @@
 
     <!-- Material Icons -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
 
     <!-- Ícono para pestaña navegador -->
     <link rel="icon" href="./assets/20241116_174344.ico" type="image/x-icon">
@@ -202,17 +203,65 @@
             </div>
         </section>
 
-        <section aria-labelledby="servicios">
+        <section class="servicios" aria-labelledby="servicios">
             <h2 class="subtitulo" id="servicios">Nuestros servicios</h2>
-            <ul class="servicios">
-                <li >Neurocirugía y neurocirugía pediátrica</li>
-                <li >Neurología pediátrica</li>
-                <li >Neurorehabilitación y fisioterapia</li>
-                <li >Neuropsicología</li>
-                <li >Medicina hiperbárica</li>
-                <li >Oncología pediátrica</li>
-                <li >Heridas complejas y pie diabético</li>
-            </ul>
+                <div class="contenedor-trajetas-servicios">
+                <div class="servicio neurocirugia" data-seccion="neurocirugia" id="neurocirugia">
+                    <div class="borde-servicios">
+                        <p>Neurocirugía y neurocirugía pediátrica</p>
+                        <span class="material-symbols-outlined">
+                            neurology
+                        </span>
+                    </div>
+                </div>
+                <div class="servicio neurologia" data-seccion="neurologia">
+                    <div class="borde-servicios">
+                        <p>Neurología pediátrica </p>
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+                </div>
+                <div class="servicio neurorehab" data-seccion="neurorehab">
+                    <div class="borde-servicios">
+                        <p>Neurorehabilitación y fisioterapia</p>
+                        <span class="material-symbols-outlined">
+                            psychology physical_therapy
+                        </span>
+                    </div>
+                </div>
+                <div class="servicio neuropsic" data-seccion="neuropsic">
+                    <div class="borde-servicios">
+                        <p>Neuropsicología</p>
+                        <span class="material-symbols-outlined">
+                            psychology_alt
+                        </span>
+                        
+                    </div>
+                </div>
+                <div class="servicio hiperbarica" data-seccion="hiperbarica">
+                    <div class="borde-servicios">
+                        <p>Medicina hiperbárica</p>
+                        <span class="material-symbols-outlined">
+                            ward
+                        </span>
+                    </div>
+                </div>
+                <div class="servicio oncopeda" data-seccion="oncopeda">
+                    <div class="borde-servicios">
+                        <p>Oncología pediátrica</p>
+                        <span class="material-symbols-outlined">
+                            mixture_med
+                        </span>
+                    </div>
+                </div>
+                <div class="servicio heridas" data-seccion="heridas">
+                    <div class="borde-servicios">
+                        <p>Heridas complejas y pie diabético </p>
+                        <span class="material-symbols-outlined">
+                            healing
+                        </span>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section aria-labelledby="contacto">
@@ -323,21 +372,21 @@
         <section class="seccion-enlaces-contacto" aria-labelledby="enlaces-contacto">
             <h3>Contáctanos</h3>
             <ul class="enlaces-contacto">
-                <li><a href="mailto:contacto@cenhammy.com" target="_blank">
+                <li><span><a href="mailto:contacto@cenhammy.com" target="_blank">
                     <i class="fa-solid fa-envelope"></i>
-                    contacto@cenhammy.com</a></li>
-                <li><a href="tel:522292373924" target="_blank">
+                    contacto@cenhammy.com</a></span></li>
+                <li><span><a href="tel:522292373924" target="_blank">
                     <i class="fa-solid fa-phone"></i>
-                    +52 2292 37 39 24</a></li>
-                <li><a href="https://wa.me/:522292373924" target="_blank">
+                    +52 2292 37 39 24</a></span></li>
+                <li><span><a href="https://wa.me/:522292373924" target="_blank">
                     <i class="fa-brands fa-whatsapp"></i>
-                    +52 2292 37 39 24</a></li>
-                <li ><a id="fb" href="https://www.facebook.com/CenHammy.Neurorehabilitacion/">
+                    +52 2292 37 39 24</a></span></li>
+                <li><span><a id="fb" href="https://www.facebook.com/CenHammy.Neurorehabilitacion/">
                     <i class="fa-brands fa-facebook"></i>
-                    CenHammy Centro de neurorehabilitación y medicina hiperbárica</a></li>
-                <li><a href="https://www.instagram.com/cenhammy/" target="_blank">
+                    CenHammy Centro de neurorehabilitación y medicina hiperbárica</a></span></li>
+                <li><span><a href="https://www.instagram.com/cenhammy/" target="_blank">
                     <i class="fa-brands fa-instagram"></i>
-                    CENHammy</a></li>
+                    CENHammy</a></span></li>
             </ul>
         </section>
 
