@@ -444,7 +444,7 @@ h3 {
 .horario {
     display: flex;
     flex-wrap: wrap;
-    width: 25rem;
+    width: 22rem;
     height: 28rem;
     border-radius: 0.5rem;
     background-image: radial-gradient(at 0% 0%, var(--color-transition2), var(--color-transition1));
@@ -480,7 +480,7 @@ h3 {
 
 .direccion {
     display: flex;
-    width: 25rem;
+    width: 22rem;
     height: 28rem;
     flex-direction: column;
     justify-content: space-around;
@@ -513,7 +513,7 @@ h3 {
 /* Formulario */
 
 .formulario-contacto {
-    width: 25rem;
+    width: 22rem;
     height: 28rem;
 }
 
@@ -561,18 +561,19 @@ h3 {
     align-items: center;
     justify-content: space-around;
     border: solid var(--color-background-secundario);
-    width: 24rem;
+    width: 21rem;
     border-radius: 0.5rem;
     font-size: 0.9rem;
 }
 
 .form-contenido fieldset legend {
-    margin-left: 2.2rem;
+    margin-left: 1.2rem;
 }
 
 .opcion-contacto {
-    gap: 0.5rem;
+    gap: 0.2rem;
     padding-bottom: 0.4rem;
+    font-size: 0.8rem;
 }
 
 #comentarios{
@@ -656,14 +657,16 @@ footer{
 .autor {
     display: flex;
     justify-content: right;
-    padding: 1rem 0.5rem 0.25rem 0;
+    padding: 1rem 0.25rem 0.25rem 0;
     width: 100%;
+    text-align: center;
+    font-size: 0.7rem;
 }
 
 .enlaces-autor {
     list-style: none; 
     display: flex;
-    width: 4rem;
+    width: 3rem;
     justify-content: space-around;
 }
 
