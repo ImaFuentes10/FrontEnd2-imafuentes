@@ -182,6 +182,7 @@ main{
 
 .texto-hammy {
     display: flex;
+    flex-direction: column;
     padding: 0 5% 0 0;
     height: 27rem;
     width: 50%;
@@ -191,7 +192,7 @@ main{
     font-weight: bold;
     font-style: italic;
     font-size: 1rem;
-    text-align: center;
+    text-align: right;
 }
 
 .cenhammy {
@@ -691,6 +692,36 @@ footer{
 }
 
 @media screen and (max-width:650px) {
+    .hammy {
+        height: 20rem;
+    }
+    
+    .img-hammy {
+        height: 20rem;
+    }
+    
+    .texto-hammy {
+        height: 20rem;
+        font-size: 0.8rem;
+    }
+    
+    .cenhammy {
+        height: 9rem;;
+    }
+
+    .cenhammy-texto {
+        font-size: 0.8rem;
+        height: 20rem;
+    }
+    
+    .logo-color {
+        height: 20rem;
+    }
+    
+    .img-cenhammy {
+        height: 12rem;
+    }
+    
     .contenedor-tarjetas-servicios{
         display: grid;
         grid-template-columns: repeat(9, 1fr);
@@ -728,5 +759,37 @@ footer{
     .heridas {
         grid-column: 4 / span 3;
         grid-row: 4;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .hammy {
+        height: 16rem;
+    }
+    
+    .img-hammy {
+        height: 16rem;
+    }
+    
+    .texto-hammy {
+        font-size: 0.6rem;
+        height: 16rem;
+    }
+    
+    .cenhammy {
+        height: 6rem;;
+    }
+
+    .cenhammy-texto {
+        font-size: 0.6rem;
+        height: 16rem;
+    }
+
+    .logo-color {
+        height: 16rem;
+    }
+    
+    .img-cenhammy {
+        height: 8rem;
     }
 }
