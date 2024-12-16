@@ -41,7 +41,6 @@ header{
     display: flex;
     width: 20%;
     justify-content: center;
-    
 }
 
 .logo {
@@ -95,6 +94,9 @@ header{
 
 .botones-navegacion li {
     padding: 0.5rem 2%;
+    display: flex;
+    align-items: center;
+    height: 100%;
 }
 
 .botones-navegacion li:hover {
@@ -130,6 +132,11 @@ header{
     justify-content: space-around;
 }
 
+.botones-contacto li {
+    display: flex;
+    align-items: center;
+}
+
 .botones-contacto li a {
     color: var(--color-texto-tenue);
     font-size: 1.1rem;
@@ -150,7 +157,7 @@ main{
 .inicio{
     display: flex;
     justify-content: center;
-    margin: 2rem 0 0 0;
+    margin: 1rem 0 0 0;
     flex-wrap: wrap;
 }
 
@@ -158,7 +165,7 @@ main{
     display: flex;
     background-image: radial-gradient(at 0%, var(--color-transition3) 65%, var(--color-transition1));
     width: 100%;
-    height: 27rem;
+    height: 37rem;
     justify-content: center;
     box-shadow: 0 0.15rem rgba(0, 0, 0, 0.2);
 }
@@ -170,7 +177,7 @@ main{
 
 .img-hammy {
     display: flex;
-    height: 27rem;
+    height: 37rem;
     width: 90%;
     border-radius: 0 80% 80% 0;
     overflow: hidden;
@@ -184,14 +191,14 @@ main{
     display: flex;
     flex-direction: column;
     padding: 0 5% 0 0;
-    height: 27rem;
+    height: 37rem;
     width: 50%;
     align-items: center;
     justify-content: center;
     color: var(--color-background-secundario);
     font-weight: bold;
     font-style: italic;
-    font-size: 1rem;
+    font-size: 1.2rem;
     text-align: right;
 }
 
@@ -215,7 +222,7 @@ main{
     color: var(--color-background-secundario);
     font-weight: bold;
     font-style: italic;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 .logo-color {
@@ -677,6 +684,26 @@ footer{
 }
 
 @media screen and (max-width:1024px) {
+    /* INICIO */
+    .hammy {
+        height: 27rem;
+    }
+    
+    .img-hammy {
+        height: 27rem;
+    }
+    
+    .texto-hammy {
+        height: 27rem;
+        font-size: 1rem;
+    }
+
+    .cenhammy-texto {
+        font-size: 1rem;
+        height: 27rem;
+    }
+
+    /* SERVICIOS */
     .contenedor-tarjetas-servicios{
         row-gap: 1.5rem;
     }
@@ -692,6 +719,63 @@ footer{
 }
 
 @media screen and (max-width:650px) {
+    /* HEADER */
+    header{
+        justify-content: space-between;
+        padding-bottom: 0.5rem;
+    }
+    
+    .contenedor-logo{
+        width: 25%;
+    }
+    
+    .logo {
+        height: 3rem;
+        width: 6rem;
+    }
+    
+    .nav-superior{ 
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 75%;
+    }
+    
+    .nav-botones-navegacion {  
+        width: 100%;
+        height: 1.5rem;
+        margin-top: 0;
+        order: 1;
+    }
+    
+    .botones-navegacion {
+        border-width: 0.1rem;
+        border-radius: 1rem;
+    }
+    
+    .botones-navegacion li {
+        padding: 0 2%;
+    }
+    
+    .botones-navegacion li:hover {
+        border-radius: 1rem;
+    }
+    
+    .botones-navegacion li a {
+        font-size: 0.8rem;
+    }
+    
+    .nav-botones-contacto{
+        order: 0;
+        width: 100%;
+        margin-top: 0;
+        height: 1.5rem;
+    }
+
+    .botones-contacto li a {
+        font-size: 0.8rem;
+    }
+
+    /* INICIO */
     .hammy {
         height: 20rem;
     }
@@ -722,6 +806,7 @@ footer{
         height: 12rem;
     }
     
+    /* SERVICIOS */
     .contenedor-tarjetas-servicios{
         display: grid;
         grid-template-columns: repeat(9, 1fr);
@@ -763,17 +848,18 @@ footer{
 }
 
 @media screen and (max-width:500px) {
+    /* INICIO */
     .hammy {
-        height: 16rem;
+        height: 14rem;
     }
     
     .img-hammy {
-        height: 16rem;
+        height: 14rem;
     }
     
     .texto-hammy {
-        font-size: 0.6rem;
-        height: 16rem;
+        font-size: 0.5rem;
+        height: 14rem;
     }
     
     .cenhammy {
@@ -781,8 +867,8 @@ footer{
     }
 
     .cenhammy-texto {
-        font-size: 0.6rem;
-        height: 16rem;
+        font-size: 0.5rem;
+        height: 14rem;
     }
 
     .logo-color {
