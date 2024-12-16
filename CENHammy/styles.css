@@ -7,6 +7,7 @@
     --color-transition1: #53a7be;
     --color-transition2: #174188;
     --color-background-secundario: #f4f4f4;
+    --color-transition3: #1b65a0;
 }
 
 * {
@@ -20,98 +21,87 @@ body {
     color:var(--color-texto);
     background-color: var(--color-background);
     line-height: 1.5;
-    
+    display: flex;
+    flex-direction: column;
 }
 
 /* HEADER */
 
 header{
-    margin-bottom: 40px;
     display: flex;
     position: sticky;
     top: 0;
     z-index: 1000;
     background-color: var(--color-background);
+    justify-content: space-between;
+    padding-bottom: 0.5rem;
+}
+
+.contenedor-logo{
+    display: flex;
+    width: 20%;
+    justify-content: center;
+    
 }
 
 .logo {
     display: flex;
-    position: absolute;
-    top: 0;
-    left: 75px;
     background-color: var(--color-primario);
-    padding: 10px;
-    width: 175px;
-    border-radius: 0px 0px 25px 25px;
+    height: 5rem;
+    width: 8rem;
+    border-radius: 0 0 1.5rem 1.5rem;
     justify-content: center;
     align-items: center;
     z-index: 1100;
+    margin-left: 5%;
+}
+
+.logo a{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 .logo a img {
-    width: 150px;
+    width: 90%;
+    height: 80%;
 }
 
-.nav-botones-contacto{
+.nav-superior{ 
     display: flex;
-    position: absolute;
-    top: 25px;
-    right: 0px;
-    z-index: 100;
-}
-
-.botones-contacto {
-    display: flex;
-    list-style: none;
-    padding: 10px 0;
-    width: 400px;
+    flex-wrap: wrap;
+    width: 80%;
     justify-content: space-around;
 }
 
-.botones-contacto li a {
-    color: var(--color-texto-tenue);
-    font-size: 25px;
-}
-
-.botones-contacto li a:hover {
-    cursor: pointer;
-    color: var(--color-texto);
-}
-
-.nav-superior{ /*Puesto antes de header para que funciones sticky*/
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-}
-
 .nav-botones-navegacion {
-    display: flex;
-    position: relative;
-    padding: 10px 10px 7px 10px;
-    background-color: var(--color-background);
-    width: 100%;
-    top: 15px;
+    display: flex;  
+    width: 75%;
+    height: 3rem;
+    margin-top: 2rem;
     justify-content: center;
 }
 
 .botones-navegacion {
     list-style: none;
     display: flex;
-    width: 690px;
+    width: 90%;
     border: solid var(--color-texto-tenue);
-    border-radius: 25px;
+    border-radius: 1.5rem;
     justify-content: space-around;
 }
 
 .botones-navegacion li {
-    padding: 10px 54px;
+    padding: 0.5rem 2%;
 }
 
 .botones-navegacion li:hover {
     background-image: linear-gradient(to right,var(--color-transition2),var(--color-transition1));
     color: var(--color-background);
     cursor: pointer;
-    border-radius: 25px;
+    border-radius: 1.5rem;
 }
 
 .botones-navegacion li a {
@@ -124,108 +114,123 @@ header{
     color: var(--color-background);
 }
 
+.nav-botones-contacto{
+    display: flex;
+    width: 25%;
+    margin-top: 2rem;
+    height: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.botones-contacto {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.botones-contacto li a {
+    color: var(--color-texto-tenue);
+    font-size: 1.1rem;
+}
+
+.botones-contacto li a:hover {
+    cursor: pointer;
+    color: var(--color-texto);
+}
+
 /* MAIN */
+
 main{
-    flex-grow: 1;
     display: flex;
     flex-direction: column;
-    position: relative;
-    height: auto;
 }
 
 .inicio{
     display: flex;
     justify-content: center;
-    margin: 60px 0 0 0;
+    margin: 2rem 0 0 0;
     flex-wrap: wrap;
 }
 
 .hammy {
     display: flex;
-    margin: 0 20px;
-    border-radius: 51px;
-    background-image: radial-gradient(at 0%, #1b65a0 65%, var(--color-transition1));
-    width: 1100px;
-    height: 434px;
+    background-image: radial-gradient(at 0%, var(--color-transition3) 65%, var(--color-transition1));
+    width: 100%;
+    height: 27rem;
     justify-content: center;
 }
 
 .contenedor-img-hammy{
     display: flex;
-    border-radius: 51px;
     width: 50%;
 }
 
 .img-hammy {
     display: flex;
-    height: 434px;
+    height: 27rem;
     width: 90%;
-    border-radius: 50px 80% 80% 50px;
-    background-color: #817f80;
-    position: relative;
+    border-radius: 0 80% 80% 0;
     overflow: hidden;
 }
 
 .img-hammy img{
-    height: 100%;
     width: 100%;
 }
 
 .texto-hammy {
     display: flex;
-    padding: 0 5% 0 5%;
-    height: 434px;
+    padding: 0 5% 0 0;
+    height: 27rem;
     width: 50%;
     align-items: center;
     justify-content: center;
     color: var(--color-background-secundario);
     font-weight: bold;
     font-style: italic;
-    font-size: 1.1rem;
+    font-size: 1rem;
+    text-align: center;
 }
 
 .cenhammy {
     display: flex;
-    margin: 20px 20px;
-    border-radius: 51px;
-    background-image: radial-gradient(at 0% 0%, #1b65a0 10%, var(--color-transition1) 90%);
-    width: 1100px;
-    height: 200px;
+    margin: 1.5rem 0;
+    background-image: radial-gradient(at 0% 0%, var(--color-transition3) 10%, var(--color-transition1) 90%);
+    width: 100%;
+    height: 12rem;
     justify-content: center;
+    align-items: center;
 }
 
 .cenhammy-texto {
     display: flex;
-    padding: 0 5% 0 5%;
-    height: 200px;
+    height: 12rem;
     width: 80%;
     align-items: center;
-    justify-content: center;
     text-align: center;
     color: var(--color-background-secundario);
     font-weight: bold;
     font-style: italic;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 .logo-color {
     display: flex;
-    margin: 0px 20px;
-    border-radius: 51px;
-    background-image: radial-gradient(at 50% 100%, white 60%, var(--color-transition1));
-    width: 1100px;
-    height: 300px;
+    background-image: radial-gradient(at 50% 100%, white 58%, var(--color-transition1));
+    width: 100%;
+    height: 18rem;
     justify-content: center;
     align-items: center;
 }
 
 .img-cenhammy {
     display: flex;
-    height: 200px;
+    height: 12rem;
     width: 40%;
-    border-radius: 50px;
+    border-radius: 3rem;
     position: relative;
-    top: 10px;
+    top: 1rem;
 }
 
 .subtitulo {
