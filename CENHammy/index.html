@@ -296,73 +296,71 @@
                             &nbsp;Juan Enríquez 780, entre Víctimas del 5 y 6 de julio y Flores Magón,Fracc. Zaragoza.
                             91910. Veracruz, Ver, México.</a>
                     </div>
-        <div>
-            <form class="formulario-contacto" aria-labelledby="formulario-contacto">
-                <fieldset class="formulario-contenedor">
-                    
+        
+                <form class="formulario-contacto" aria-labelledby="formulario-contacto">
+                    <fieldset class="formulario-contenedor">
+                
                         <h3>Agenda una cita</h3>
                     
+                        <div class="form-contenido">
+                            <div class="form-elemento">
+                                <label for="nombre">Nombre(s):</label>
+                                <input type="text" id="nombre" placeholder="Escribe tu(s) nombre(s)" required>
+                            </div>
+                            <div class="form-elemento">
+                                <label for="apellido">Apellidos(s):</label>
+                                <input type="text" id="apellido" placeholder="Escribe tu(s) apellido(s)" required>
+                            </div>
+                            <div class="form-elemento">
+                                <label for="usuario">Soy</label>
+                                <select id="usuario" required>
+                                    <option>------ Selecciona ------</option>
+                                    <option>Paciente</option>
+                                    <option>Familiar</option>
+                                    <option>Profesional de la salud</option>
+                                    <option>Empresa/Proveedor</option>
+                                    <option>Otro</option>
+                                </select>
+                            </div>
+                            <div class="form-elemento">
+                                <label for="teléfono">Teléfono:</label>
+                                <input type="text" id="teléfono" placeholder="(555) 555 55 55" required>
+                            </div>
+                            <div class="form-elemento">
+                                <label for="email">Correo electrónico:</label>
+                                <input type="text" id="email" placeholder="ejemplo@correo.com" required>
+                            </div>
+                            <fieldset class="form-elemento">
+                                <legend>Deseo que me contacten inicialmente por: </legend>
+                                <div class="opcion-contacto">
+                                    <label for="llamada">Llamada</label>
+                                    <input type="radio" name="opcion-contacto" id="Llamada">
+                                </div>
+                                <div class="opcion-contacto">
+                                    <label for="cualquiera">WhatsApp</label>
+                                    <input type="radio" name="opcion-contacto" id="WhatsApp">
+                                </div>
+                                <div class="opcion-contacto">
+                                    <label for="email">Correo electrónico</label>
+                                    <input type="radio" name="opcion-contacto" id="email">
+                                </div>
+                            </fieldset>
 
-                    <div class="form-contenido">
-                        <div class="form-elemento">
-                        <label for="nombre">Nombre(s):</label>
-                        <input type="text" id="nombre" placeholder="Escribe tu(s) nombre(s)" required>
-                        </div>
-                        <div class="form-elemento">
-                        <label for="apellido">Apellidos(s):</label>
-                        <input type="text" id="apellido" placeholder="Escribe tu(s) apellido(s)" required>
-                        </div>
-                        <div class="form-elemento">
-                        <label for="usuario">Soy</label>
-                        <select id="usuario" required>
-                            <option>------ Selecciona ------</option>
-                            <option>Paciente</option>
-                            <option>Familiar</option>
-                            <option>Profesional de la salud</option>
-                            <option>Empresa/Proveedor</option>
-                            <option>Otro</option>
-                        </select>
-                        </div>
-                        <div class="form-elemento">
-                        <label for="teléfono">Teléfono:</label>
-                        <input type="text" id="teléfono" placeholder="(555) 555 55 55" required>
-                        </div>
-                        <div class="form-elemento">
-                        <label for="email">Correo electrónico:</label>
-                        <input type="text" id="email" placeholder="ejemplo@correo.com" required>
-                        </div>
-                        <fieldset class="form-elemento">
-                            <legend>Deseo que me contacten inicialmente por:</legend>
-                            <div class="opcion-contacto">
-                            <label for="llamada">Llamada</label>
-                            <input type="radio" name="opcion-contacto" id="Llamada">
+                            <div class="form-elemento">
+                                <label for="comentarios">Comentarios:</label>
+                                <textarea 
+                                id="comentarios" rows="5" placeholder="Escribe aquí tus comentarios..." required>
+                                </textarea>
                             </div>
-                            <div class="opcion-contacto">
-                            <label for="cualquiera">WhatsApp</label>
-                            <input type="radio" name="opcion-contacto" id="WhatsApp">
-                            </div>
-                            <div class="opcion-contacto">
-                            <label for="email">Correo electrónico</label>
-                            <input type="radio" name="opcion-contacto" id="email">
-                            </div>
-                        </fieldset>
-
-                        <div class="form-elemento">
-                        <label for="comentarios">Comentarios:</label>
-                        <textarea id="comentarios" rows="5" placeholder="Escribe aquí tus comentarios..." required>
-                        </textarea>
-                        </div>
                         
-                        <button class="boton" type="submit">
-                            Enviar
-                            <span class="material-icons">send</span>
-                        </button>
-                        
-                    </div>
-                </fieldset>
-            </form>
-        </div>
-        </div>
+                            <button class="boton" type="submit">
+                                Enviar
+                                <span class="material-icons">send</span>
+                            </button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
         </section>
     </main>
 
