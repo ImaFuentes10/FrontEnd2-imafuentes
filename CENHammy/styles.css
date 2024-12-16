@@ -20,22 +20,28 @@ body {
     color:var(--color-texto);
     background-color: var(--color-background);
     line-height: 1.5;
+    
 }
 
 /* HEADER */
 
 header{
     margin-bottom: 40px;
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: var(--color-background);
 }
 
 .logo {
     display: flex;
     position: absolute;
     top: 0;
-    left: 25px;
+    left: 75px;
     background-color: var(--color-primario);
     padding: 10px;
-    width: 275px;
+    width: 175px;
     border-radius: 0px 0px 25px 25px;
     justify-content: center;
     align-items: center;
@@ -43,27 +49,28 @@ header{
 }
 
 .logo a img {
-    width: 250px;
+    width: 150px;
 }
 
 .nav-botones-contacto{
     display: flex;
     position: absolute;
-    top: 15px;
-    right: 0;
+    top: 25px;
+    right: 0px;
+    z-index: 100;
 }
 
 .botones-contacto {
     display: flex;
     list-style: none;
-    padding: 10px;
-    width: 250px;
+    padding: 10px 0;
+    width: 400px;
     justify-content: space-around;
 }
 
 .botones-contacto li a {
     color: var(--color-texto-tenue);
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .botones-contacto li a:hover {
@@ -71,24 +78,20 @@ header{
     color: var(--color-texto);
 }
 
-.contenedor-botones-navegacion{ /*Puesto antes de header para que funciones sticky*/
+.nav-superior{ /*Puesto antes de header para que funciones sticky*/
     display: flex;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    background-color: var(--color-background);
-    margin-top: 60px;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 .nav-botones-navegacion {
     display: flex;
-    position: absolute;
-    padding: 10px 10px;
-    top: 0;
-    right: 0;
+    position: relative;
+    padding: 10px 10px 7px 10px;
     background-color: var(--color-background);
     width: 100%;
-    justify-content: right;
+    top: 15px;
+    justify-content: center;
 }
 
 .botones-navegacion {
@@ -101,7 +104,7 @@ header{
 }
 
 .botones-navegacion li {
-    padding: 10px 38px;
+    padding: 10px 54px;
 }
 
 .botones-navegacion li:hover {
@@ -122,11 +125,18 @@ header{
 }
 
 /* MAIN */
+main{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: auto;
+}
 
 .inicio{
     display: flex;
     justify-content: center;
-    padding: 50px 0 15px 0;
+    margin: 60px 0 0 0;
     flex-wrap: wrap;
 }
 
@@ -140,14 +150,19 @@ header{
     justify-content: center;
 }
 
+.contenedor-img-hammy{
+    display: flex;
+    border-radius: 51px;
+    width: 50%;
+}
+
 .img-hammy {
     display: flex;
     height: 434px;
-    width: 40%;
-    border-radius: 50px 217px 217px 50px;
+    width: 90%;
+    border-radius: 50px 80% 80% 50px;
     background-color: #817f80;
     position: relative;
-    right: 55px;
     overflow: hidden;
 }
 
@@ -217,7 +232,7 @@ header{
     color:var(--color-primario);
     font-weight: bolder;
     text-align: center;
-    padding: 30px 0 15px 0;
+    margin: 25px 0 15px 0;
     width: 100%;
     font-size: 32px;
 }
@@ -306,18 +321,20 @@ header{
 }
 
 .servicios {
+    display: flex;
+    flex-wrap: wrap;
     list-style: none;
     text-align: center;
     text-decoration:none;
-    padding: 0 20px;
+    padding: 5px 20px;
 }
 
-.contenedor-trajetas-servicios{
+.contenedor-tarjetas-servicios{
     margin-top: 25px;
     display: grid;
     grid-template-columns: repeat(32, 1fr);
     column-gap: 1rem;
-    row-gap: 4rem;
+    row-gap: 3rem;
     align-items: center;
     justify-items: center;
 }
@@ -401,6 +418,13 @@ header{
     grid-row: 2;
 }
 
+.contacto{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px 0 0 0;
+    justify-content: space-around;
+    height: auto;
+}
 
 h3 {
     color: var(--color-primario);
@@ -410,11 +434,15 @@ h3 {
     width: 100%;
 }
 
-.tarjetas {
+.tarjetas-contacto {
     display: flex;
-    margin: 0 20px 20px 20px;
+    flex-wrap: wrap;
+    margin: 0 10px 20px 10px;
     justify-content: space-evenly;
-    height: 450px;
+    height: auto;
+    width: 100%;
+    gap: 20px;
+    overflow: none;
 }
 
 .horario {
@@ -448,6 +476,7 @@ h3 {
     justify-content: space-around;
     position: relative;
     color: var(--color-background);
+    font-size: 20px;
 }
 
 .horas-atencion p  {
@@ -611,11 +640,20 @@ h3 {
 
 /* FOOTER */
 
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 0;
+    flex-shrink: 0;
+    bottom: 0;
+}
+
 .seccion-enlaces-contacto {
     display: flex;
     flex-wrap: wrap;
     padding: 20px;
     justify-content: center;
+    width: 100%;
 }
 
 .enlaces-contacto {
@@ -660,6 +698,7 @@ h3 {
     display: flex;
     justify-content: right;
     padding: 20px;
+    width: 100%;
 }
 
 .enlaces-autor {

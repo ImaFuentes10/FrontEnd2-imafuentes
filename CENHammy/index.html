@@ -53,24 +53,13 @@
 </head>
 
 <body>
-    <div class="contenedor-botones-navegacion">
-        <nav class="nav-botones-navegacion" aria-label="Botones de navegación del sitio">
-            <ul class="botones-navegacion">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#nosotros">Nosotros</a></li>
-                <li><a href="#equipo">Equipo</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    </div>
-    <header>
-        <div class="logo"  id="inicio">
+    <header>  
+        <div class="logo">
             <a  href="https://imafuentes10.github.io/FrontEnd2-imafuentes/CENHammy/index.html" aria-label="home-link">
                 <img src="./img/logo-CEN-blanco-01-2.png" alt="CENHammy" title="CENHammy" loading="eager">
             </a>
         </div>
-
+<div class="nav-superior">
         <nav class="nav-botones-contacto" aria-label="Enlaces de redes sociales y contacto de CENHammy">
             <ul class="botones-contacto">
                 <li>
@@ -95,16 +84,28 @@
                 </li>
             </ul>
         </nav>
+          
+                <nav class="nav-botones-navegacion" aria-label="Botones de navegación del sitio">
+                    <ul class="botones-navegacion">
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        
     </header>
 
-    <main>
-        <section class="inicio" aria-labelledby="inicio">
+    <main id="inicio">
+        <section class="inicio" aria-labelledby="inicio" >
             <div class="hammy">
+                <div class="contenedor-img-hammy">
                 <figure class="img-hammy">
                     <img src="https://cenhammy.com/wp-content/uploads/2022/06/FOTOWEB_CEN-01.png" 
                     alt="Foto Hammy" title="Hammy" loading="eager">
                 </figure>
-            
+            </div>
                 <p class="texto-hammy">
                     Hace 36 años, un niño de apenas seis, decidió ser neurocirujano para
                     poder curar a su primo hermano que padecía parálisis cerebral, este
@@ -126,14 +127,14 @@
             </p>
         </div>
 
-        <figure class="logo-color">
+        <figure class="logo-color" id="nosotros">
             <img class="img-cenhammy" src="./img/FOTOWEB_CEN-02-1-e1655833400800~2.png" 
                  alt="CENHammy" title="CENHammy" loading="eager">
         </figure>
         </section>
 
         <section class="equipo" aria-labelledby="equipo">
-            <h2 class="subtitulo" id="equipo">Nuestro equipo</h2>
+            <h2 class="subtitulo">Nuestro equipo</h2>
             <div class="equipo-tarjetas">
                 <a class="especialista" href="">
                     <div class="contenedor-especialista">
@@ -203,9 +204,9 @@
             </div>
         </section>
 
-        <section class="servicios" aria-labelledby="servicios">
-            <h2 class="subtitulo" id="servicios">Nuestros servicios</h2>
-                <div class="contenedor-trajetas-servicios">
+        <section class="servicios" aria-labelledby="servicios" id="servicios">
+            <h2 class="subtitulo">Nuestros servicios</h2>
+                <div class="contenedor-tarjetas-servicios">
                 <div class="servicio neurocirugia" data-seccion="neurocirugia" id="neurocirugia">
                     <div class="borde-servicios">
                         <p>Neurocirugía y neurocirugía pediátrica</p>
@@ -234,7 +235,6 @@
                         <span class="material-symbols-outlined">
                             psychology_alt
                         </span>
-                        
                     </div>
                 </div>
                 <div class="servicio hiperbarica" data-seccion="hiperbarica">
@@ -264,10 +264,10 @@
             </div>
         </section>
 
-        <section aria-labelledby="contacto">
-            <h2 class="subtitulo" id="contacto">Contacto</h2>
+        <section class="contacto" aria-labelledby="contacto" id="contacto">
+            <h2 class="subtitulo" >Contacto</h2>
             
-            <div class="tarjetas">
+            <div class="tarjetas-contacto">
                 <div class="horario">
                     <h3>Horario</h3>
                     <div class="horas-atencion">
@@ -292,8 +292,7 @@
                             &nbsp;Juan Enríquez 780, entre Víctimas del 5 y 6 de julio y Flores Magón,Fracc. Zaragoza.
                             91910. Veracruz, Ver, México.</a>
                     </div>
-        
-
+        <div>
             <form class="formulario-contacto" aria-labelledby="formulario-contacto">
                 <fieldset class="formulario-contenedor">
                     
@@ -358,6 +357,7 @@
                     </div>
                 </fieldset>
             </form>
+        </div>
         </div>
         </section>
     </main>
